@@ -1,0 +1,479 @@
+<view class="application">
+    <view wx:if="{{nologin}}" class="userlogin">
+        <view class="notlogin" hover-class="none" hover-stop-propagation="false">您还没有登录，请先登录！</view>
+        <view class="pleaselogin" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotomine">去登录</button>
+        </view>
+    </view>
+    <view wx:else class="application_container">
+        <!-- 左侧菜单 -->
+        <scroll-view class="leftmenu" scroll-y="{{true}}">
+            <letfMenuList letfMenuList="{{letfMenuList}}" bindclickselectchange="handlebindclickselectchange"></letfMenuList>
+        </scroll-view>
+        <!-- 右侧申报内容 -->
+        <scroll-view class="rightcontainer" scroll-y="{{true}}">
+            <view class="applycontent">
+
+                <block wx:if="{{letfMenuList[0].isactive}}">
+                    <view class="applymanage" hover-class="none" hover-stop-propagation="false">
+                        <view class="xiangmuname" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmunameword" hover-class="none" hover-stop-propagation="false">
+                                项目名称
+                            </view>
+                            <view class="inputxiangmuname" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="projectxiangmuname" />
+                            </view>
+                        </view>
+                        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                            <view class="next" hover-class="none" hover-stop-propagation="false">
+                                <button bindtap="searchprojectproject">查询</button>
+                            </view>
+                        </view>
+                        <view class="createxiangmu" hover-class="none" hover-stop-propagation="false">
+                            <view class="createxiangmu1">
+                                <button bindtap="gotocreateexercise">+新建项目</button>
+                            </view>
+                        </view>
+
+                        <view class="querytable" hover-class="none" hover-stop-propagation="false">
+                            <view class="querytableleft" hover-class="none" hover-stop-propagation="false">
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    项目编号
+                                </view>
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    项目名称
+                                </view>
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    项目类型
+                                </view>
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    项目级别
+                                </view>
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    所属批次
+                                </view>
+                                <view class="project" hover-class="none" hover-stop-propagation="false">
+                                    状态
+                                </view>
+                            </view>
+                            <view class="querytableright" hover-class="none" hover-stop-propagation="false">
+                                <view class="searchtable" hover-class="none" hover-stop-propagation="false" wx:for="{{firstprojtectinfo}}">
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectid}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectname}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectkind}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectlevel}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projetyear}}
+                                    </view>
+                                </view>
+                                <view class="searchtab2" hover-class="none" hover-stop-propagation="false" >
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false"wx:if="{{isapproveproject}}">
+                                        已通过
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未通过
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{letfMenuList[1].isactive}}">
+                    <view class="quarterlymanagement" hover-class="none" hover-stop-propagation="false">
+                        <view class="xiangmuyear" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmuyearword" hover-class="none" hover-stop-propagation="false">
+                                项目年份
+                            </view>
+                            <view class="selectbox" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="xiangmuyear" />
+                            </view>
+                        </view>
+                        <view class="xiangmuname" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmunameword" hover-class="none" hover-stop-propagation="false">
+                                项目名称
+                            </view>
+                            <view class="inputxiangmuname" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="xiangmuname" />
+                            </view>
+                        </view>
+                        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                            <view class="next" hover-class="none" hover-stop-propagation="false">
+                                <button bindtap="searchproject">查询</button>
+                            </view>
+                        </view>
+                        <view class="querytable" hover-class="none" hover-stop-propagation="false">
+                            <view class="querytableleft" hover-class="none" hover-stop-propagation="false">
+                                <view class="projectid" hover-class="none" hover-stop-propagation="false">
+                                    项目编号
+                                </view>
+                                <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                                    项目名称
+                                </view>
+                                <view class="projetckinds" hover-class="none" hover-stop-propagation="false">
+                                    项目类型
+                                </view>
+                                <view class="projectlevel" hover-class="none" hover-stop-propagation="false">
+                                    项目级别
+                                </view>
+                                <view class="projetchost" hover-class="none" hover-stop-propagation="false">
+                                    第一主持人
+                                </view>
+                                <view class="projectbatch" hover-class="none" hover-stop-propagation="false">
+                                    所属批次
+                                </view>
+                                <view class="reporte" hover-class="none" hover-stop-propagation="false">
+                                    状态
+                                </view>
+                                <view class="caozuo" hover-class="none" hover-stop-propagation="false">
+                                    <view class="caozuoword" hover-class="none" hover-stop-propagation="false">
+                                        操作
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="querytableright" hover-class="none" hover-stop-propagation="false">
+                                <view class="searchtable" hover-class="none" hover-stop-propagation="false" wx:for="{{projtectinfo}}">
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectid}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectname}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectkind}}
+                                    </view>
+                                    <view class="thesearch" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectlevel}}
+                                    </view>
+                                </view>
+                                <view class="searchtable2" hover-class="none" hover-stop-propagation="false" wx:for="{{memberinfo}}">
+                                    {{item.name}}
+                                </view>
+                                <view class="searchtable3" hover-class="none" hover-stop-propagation="false" wx:for="{{projtectinfo}}">
+                                    {{item.projetyear}}
+                                </view>
+                                <view class="searchtable4" hover-class="none" hover-stop-propagation="false">
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitquarrel}}">
+                                        已提交
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交
+                                    </view>
+                                </view>
+                                <view class="buttoncaozuo" hover-class="none" hover-stop-propagation="false">
+                                    <button style="width:25vw" bindtap="gotoquarterlymanagement" wx:if="{{isshowedit}}">
+                                        编辑
+                                    </button>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{letfMenuList[2].isactive}}">
+                    <view class="middlecheck" hover-class="none" hover-stop-propagation="false">
+                        <view class="xiangmuyear" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmuyearword" hover-class="none" hover-stop-propagation="false">
+                                项目年份
+                            </view>
+                            <view class="selectbox" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="middlexiangmuyear" />
+                            </view>
+                        </view>
+                        <view class="xiangmuname" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmunameword" hover-class="none" hover-stop-propagation="false">
+                                项目名称
+                            </view>
+                            <view class="inputxiangmuname" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="middlexiangmuname" />
+                            </view>
+                        </view>
+                        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                            <view class="next" hover-class="none" hover-stop-propagation="false">
+                                <button bindtap="searchprojectmiddle">查询</button>
+                            </view>
+                        </view>
+                        <view class="querytable" hover-class="none" hover-stop-propagation="false">
+                            <view class="querytableleft" hover-class="none" hover-stop-propagation="false">
+                                <view class="projetckinds" hover-class="none" hover-stop-propagation="false">
+                                    项目编号
+                                </view>
+                                <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                                    项目名称
+                                </view>
+                                <view class="projecttime" hover-class="none" hover-stop-propagation="false">
+                                    项目级别
+                                </view>
+                                <view class="projectlevel" hover-class="none" hover-stop-propagation="false">
+                                    项目类型
+                                </view>
+                                <view class="projetchost" hover-class="none" hover-stop-propagation="false">
+                                    所属批次
+                                </view>
+                                <view class="projectbatch" hover-class="none" hover-stop-propagation="false">
+                                    状态
+                                </view>
+                                <view class="reporte" hover-class="none" hover-stop-propagation="false">
+                                    审核结果
+                                </view>
+                                <view class="caozuo" hover-class="none" hover-stop-propagation="false">
+                                    <view class="caozuoword" hover-class="none" hover-stop-propagation="false">
+                                        操作
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="querytableright" hover-class="none" hover-stop-propagation="false">
+                                <view class="searchtab" hover-class="none" hover-stop-propagation="false" wx:for="{{middleprojtectinfo}}">
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectid}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectname}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectlevel}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectkind}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projetyear}}
+                                    </view>
+                                </view>
+                                <view class="searchtab2" hover-class="none" hover-stop-propagation="false">
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitmiddle}}">
+                                        已提交
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交
+                                    </view>
+                                </view>
+                                <view class="search3" hover-class="none" hover-stop-propagation="false">
+                                    <view class="isapprove" hover-class="none" hover-stop-propagation="false" wx:if="{{isapprovemiddle}}">
+                                        已通过
+                                    </view>
+                                    <view class="notapprove" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未通过
+                                    </view>
+                                </view>
+                                <view class="search4" hover-class="none" hover-stop-propagation="false">
+                                    <view class="buttoncaozuo" hover-class="none" hover-stop-propagation="false" wx:if="{{isshowmiddleedot}}">
+                                        <button style="width:25vw" bindtap="gotomiddlecheck">
+                                            编辑
+                                        </button>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{letfMenuList[3].isactive}}">
+                    <view class="endcheck" hover-class="none" hover-stop-propagation="false">
+                        <view class="xiangmuyear" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmuyearword" hover-class="none" hover-stop-propagation="false">
+                                项目年份
+                            </view>
+                            <view class="selectbox" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="endxiangmuyear" />
+                            </view>
+                        </view>
+                        <view class="xiangmuname" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmunameword" hover-class="none" hover-stop-propagation="false">
+                                项目名称
+                            </view>
+                            <view class="inputxiangmuname" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="endxiangmuname" />
+                            </view>
+                        </view>
+                        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                            <view class="next" hover-class="none" hover-stop-propagation="false">
+                                <button bindtap="searchprojectend">查询</button>
+                            </view>
+                        </view>
+                        <view class="querytable" hover-class="none" hover-stop-propagation="false">
+                            <view class="querytableleft" hover-class="none" hover-stop-propagation="false">
+                                <view class="projetckinds" hover-class="none" hover-stop-propagation="false">
+                                    项目编号
+                                </view>
+                                <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                                    项目名称
+                                </view>
+                                <view class="projecttime" hover-class="none" hover-stop-propagation="false">
+                                    项目级别
+                                </view>
+                                <view class="projectlevel" hover-class="none" hover-stop-propagation="false">
+                                    项目类型
+                                </view>
+                                <view class="projetchost" hover-class="none" hover-stop-propagation="false">
+                                    所属批次
+                                </view>
+                                <view class="projectbatch" hover-class="none" hover-stop-propagation="false">
+                                    状态
+                                </view>
+                                <view class="reporte" hover-class="none" hover-stop-propagation="false">
+                                    审核结果
+                                </view>
+                                <view class="caozuo" hover-class="none" hover-stop-propagation="false">
+                                    <view class="caozuoword" hover-class="none" hover-stop-propagation="false">
+                                        操作
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="querytableright" hover-class="none" hover-stop-propagation="false">
+                                <view class="searchtab" hover-class="none" hover-stop-propagation="false" wx:for="{{endprojtectinfo}}">
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectid}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectname}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectlevel}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectkind}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projetyear}}
+                                    </view>
+                                </view>
+                                <view class="searchtab2" hover-class="none" hover-stop-propagation="false">
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitend}}">
+                                        已提交
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交
+                                    </view>
+                                </view>
+                                <view class="search3" hover-class="none" hover-stop-propagation="false">
+                                    <view class="isapprove" hover-class="none" hover-stop-propagation="false" wx:if="{{isapproveend}}">
+                                        已通过
+                                    </view>
+                                    <view class="notapprove" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未通过
+                                    </view>
+                                </view>
+                                <view class="search4" hover-class="none" hover-stop-propagation="false">
+                                    <view class="buttoncaozuo" hover-class="none" hover-stop-propagation="false" wx:if="{{isshowendedot}}">
+                                        <button style="width:25vw" bindtap="gotoendmanager">
+                                            编辑
+                                        </button>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{letfMenuList[4].isactive}}">
+                    <view class="resultmanagement" hover-class="none" hover-stop-propagation="false">
+                        <view class="xiangmuyear" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmuyearword" hover-class="none" hover-stop-propagation="false">
+                                项目年份
+                            </view>
+                            <view class="selectbox" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="resultxiangmuyear" />
+                            </view>
+                        </view>
+                        <view class="xiangmuname" hover-class="none" hover-stop-propagation="false">
+                            <view class="xiangmunameword" hover-class="none" hover-stop-propagation="false">
+                                项目名称
+                            </view>
+                            <view class="inputxiangmuname" hover-class="none" hover-stop-propagation="false">
+                                <input type="text" bindinput="resultxiangmuname" />
+                            </view>
+                        </view>
+                        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                            <view class="next" hover-class="none" hover-stop-propagation="false">
+                                <button bindtap="searchprojectresult">查询</button>
+                            </view>
+                        </view>
+                        <view class="querytable" hover-class="none" hover-stop-propagation="false">
+                            <view class="querytableleft" hover-class="none" hover-stop-propagation="false">
+                                <view class="projetckinds" hover-class="none" hover-stop-propagation="false">
+                                    项目编号
+                                </view>
+                                <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                                    项目名称
+                                </view>
+                                <view class="projecttime" hover-class="none" hover-stop-propagation="false">
+                                    项目级别
+                                </view>
+                                <view class="projetchost" hover-class="none" hover-stop-propagation="false">
+                                    项目类型
+                                </view>
+                                <view class="projectbatch" hover-class="none" hover-stop-propagation="false">
+                                    所属批次
+                                </view>
+                                <view class="reporte" hover-class="none" hover-stop-propagation="false">
+                                    状态
+                                </view>
+                                <view class="caozuo" hover-class="none" hover-stop-propagation="false">
+                                    <view class="caozuoword" hover-class="none" hover-stop-propagation="false">
+                                        操作
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="querytableright" hover-class="none" hover-stop-propagation="false">
+                                <view class="searchtab" hover-class="none" hover-stop-propagation="false" wx:for="{{resultprojtectinfo}}">
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectid}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectname}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectlevel}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projectkind}}
+                                    </view>
+                                    <view class="" hover-class="none" hover-stop-propagation="false">
+                                        {{item.projetyear}}
+                                    </view>
+                                </view>
+                                <view class="searchtab2" hover-class="none" hover-stop-propagation="false">
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitresultarticle}}">
+                                        已提交论文情况
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交论文情况
+                                    </view>
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitresultpatent}}">
+                                        已提交专利情况
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交专利情况
+                                    </view>
+                                    <view class="havensubmit" hover-class="none" hover-stop-propagation="false" wx:if="{{issubmitresultawards}}">
+                                        已提交竞赛情况
+                                    </view>
+                                    <view class="nothavensubmit" hover-class="none" hover-stop-propagation="false" wx:else>
+                                        未提交竞赛情况
+                                    </view>
+                                </view>
+                                <view class="searchtab3" hover-class="none" hover-stop-propagation="false" wx:if="{{isshowresultedot}}">
+                                    <view class="edit" hover-class="none" hover-stop-propagation="false">
+                                        <button style="width:30vw" bindtap="gotoresultmanagement">
+                                            编辑
+                                        </button>
+                                    </view>
+                                    <view class="resulall" hover-class="none" hover-stop-propagation="false">
+                                        <button style="width:30vw" bindtap="gotoallresult">
+                                            成果汇总
+                                        </button>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+</view>

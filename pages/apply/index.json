@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "letfMenuList":"../../components/letfMenuList/letfMenuList",
+    "selectbox":"../../components/selectbox/selectbox"
+  },
+  "navigationBarTitleText": "申报项目"
+}

@@ -1,0 +1,104 @@
+<view class="endmanager" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        <view wx:for="{{showprojectname}}">
+            {{item.projectname}}
+        </view>
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="conductcondition" hover-class="none" hover-stop-propagation="false">
+            <view class="conductconditionword" hover-class="none" hover-stop-propagation="false">
+                一、项目执行情况
+            </view>
+            <view class="projetcback" hover-class="none" hover-stop-propagation="false">
+                <view class="projetcbackword" hover-class="none" hover-stop-propagation="false">
+                    本项目的选题背景、目的与意义
+                </view>
+                <view class="inputprojetcbackword" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputprojetcbackword"></textarea>
+                </view>
+            </view>
+
+            <view class="projectcharacter" hover-class="none" hover-stop-propagation="false">
+                <view class="projectcharacterword" hover-class="none" hover-stop-propagation="false">
+                    项目的创新点与特色
+                </view>
+
+                <view class="inputprojectcharacter" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputprojectcharacter"></textarea>
+                </view>
+            </view>
+
+
+            <view class="teamwork" hover-class="none" hover-stop-propagation="false">
+                <view class="teamworkword" hover-class="none" hover-stop-propagation="false">
+                    团队成员分工和合作情况
+                </view>
+
+                <view class="inputteamwork" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputteamwork"></textarea>
+                </view>
+            </view>
+
+            <view class="resultsay" hover-class="none" hover-stop-propagation="false">
+                <view class="resultsayword" hover-class="none" hover-stop-propagation="false">
+                   成果简述（项目成果主要内容、重要观点或对策建议、论文发表、竞赛获奖、专利/著作权、实物制作、注册公司、孵化器入孵等情况。成果可简要阐述，详细信息可前往成果管理菜单下进行提交） 
+                </view>
+
+                <view class="inputresultsay" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputresultsay"></textarea>
+                </view>
+            </view>
+
+        </view>
+
+
+        <view class="researchrepot" hover-class="none" hover-stop-propagation="false">
+            <view class="researchrepotword" hover-class="none" hover-stop-propagation="false">
+                二、研究总结报告
+            </view>
+
+            <view class="plancondition" hover-class="none" hover-stop-propagation="false">
+                <view class="planconditionword" hover-class="none" hover-stop-propagation="false">
+                    预定计划执行情况，项目研究和实践情况（含进度安排、完成内容、关键技术及效果等）
+                </view>
+
+                <view class="inputplancondition" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputplancondition"></textarea>
+                </view>
+            </view>
+
+            <view class="conclusion" hover-class="none" hover-stop-propagation="false">
+                <view class="conclusionword" hover-class="none" hover-stop-propagation="false">
+                    项目实施的收获与体会，项目工作有哪些不足，项目工作中困难与解决方法
+                </view>
+                <view class="inputconclusion" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputconclusion"></textarea>
+                </view>
+            </view>
+        </view>
+
+        <view class="moneycondition" hover-class="none" hover-stop-propagation="false">
+            <view class="moneyconditionword" hover-class="none" hover-stop-propagation="false">
+                三、经费开支与报销情况
+            </view>
+
+            <view class="payformoney" hover-class="none" hover-stop-propagation="false">
+                <view class="payformoneyword" hover-class="none" hover-stop-propagation="false">
+                    经费报销情况
+                </view>
+
+                <view class="inputpayformoney" hover-class="none" hover-stop-propagation="false">
+                    <textarea name="" id="" cols="30" rows="10" bindinput="getinputpayformoney"></textarea>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="form-group" hover-class="none" hover-stop-propagation="false">
+        <view class="sub" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="submittodatabase">提交</button>
+        </view>
+        <view class="back" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapply">返回</button>
+        </view>
+    </view>
+</view>

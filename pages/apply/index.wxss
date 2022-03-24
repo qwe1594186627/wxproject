@@ -1,0 +1,321 @@
+page {
+  height: 100%;
+}
+.application {
+  height: 100%;
+}
+.application .userlogin .notlogin {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.application .application_container {
+  height: calc(100vh);
+  display: flex;
+}
+.application .application_container .leftmenu {
+  flex: 2;
+}
+.application .application_container .leftmenu .active {
+  color: black;
+  border-left: 5rpx solid currentColor;
+}
+.application .application_container .rightcontainer {
+  background-color: #ecf0f1;
+  flex: 5;
+}
+.application .application_container .rightcontainer .applymanage {
+  border-top: 1px #ecf0f1 solid;
+}
+.application .application_container .rightcontainer .applymanage .xiangmuname {
+  padding-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+.application .application_container .rightcontainer .applymanage .xiangmuname .inputxiangmuname {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .applymanage .form-group .next {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.application .application_container .rightcontainer .applymanage .createxiangmu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  border-left: 1px #ecf0f1 solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.application .application_container .rightcontainer .applymanage .createxiangmu .createxiangmu2 {
+  padding-top: 10px;
+  padding-bottom: 10px ;
+}
+.application .application_container .rightcontainer .applymanage .querytable {
+  margin-top: 50rpx;
+  background-color: #ffffff;
+  display: flex;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableleft {
+  margin-left: 50rpx;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableleft .project {
+  padding-top: 30rpx;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableright {
+  margin-left: 50rpx;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableright .searchtable .thesearch {
+  padding-top: 30rpx;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableright .searchtab2 .havensubmit {
+  padding-top: 30rpx;
+}
+.application .application_container .rightcontainer .applymanage .querytable .querytableright .searchtab2 .nothavensubmit {
+  padding-top: 30rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #ecf0f1 solid;
+  border-left: 1px #ecf0f1 solid;
+}
+.application .application_container .rightcontainer .quarterlymanagement .xiangmuyear {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .xiangmuyear .selectbox {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .xiangmuname {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+}
+.application .application_container .rightcontainer .quarterlymanagement .xiangmuname .inputxiangmuname {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .form-group .next {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.application .application_container .rightcontainer .quarterlymanagement .querytable {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px #ecf0f1 solid;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.application .application_container .rightcontainer .quarterlymanagement .querytable .querytableright {
+  margin-top: -20rpx;
+  margin-left: 60rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .querytable .querytableright .searchtable4 .nothavensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .querytable .querytableright .searchtable4 .havensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .quarterlymanagement .querytable view:not(.caozuoword) {
+  padding-top: 10px;
+}
+.application .application_container .rightcontainer .middlecheck {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #ecf0f1 solid;
+  border-left: 1px #ecf0f1 solid;
+}
+.application .application_container .rightcontainer .middlecheck .xiangmuyear {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.application .application_container .rightcontainer .middlecheck .xiangmuyear .selectbox {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .middlecheck .xiangmuname {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+}
+.application .application_container .rightcontainer .middlecheck .xiangmuname .inputxiangmuname {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .middlecheck .form-group .next {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.application .application_container .rightcontainer .middlecheck .querytable {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px #ecf0f1 solid;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.application .application_container .rightcontainer .middlecheck .querytable .querytableright {
+  margin-top: -20rpx;
+  margin-left: 60rpx;
+}
+.application .application_container .rightcontainer .middlecheck .querytable .querytableright .searchtab2 .havensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .middlecheck .querytable .querytableright .searchtab2 .nothavensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .middlecheck .querytable .querytableright .search3 .isapprove {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .middlecheck .querytable .querytableright .search3 .notapprove {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .middlecheck .querytable view:not(.caozuoword) {
+  padding-top: 10px;
+}
+.application .application_container .rightcontainer .endcheck {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #ecf0f1 solid;
+  border-left: 1px #ecf0f1 solid;
+}
+.application .application_container .rightcontainer .endcheck .xiangmuyear {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.application .application_container .rightcontainer .endcheck .xiangmuyear .selectbox {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .endcheck .xiangmuname {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+}
+.application .application_container .rightcontainer .endcheck .xiangmuname .inputxiangmuname {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .endcheck .form-group .next {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.application .application_container .rightcontainer .endcheck .querytable {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px #ecf0f1 solid;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.application .application_container .rightcontainer .endcheck .querytable .querytableright {
+  margin-top: -20rpx;
+  margin-left: 60rpx;
+}
+.application .application_container .rightcontainer .endcheck .querytable .querytableright .searchtab2 .havensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .endcheck .querytable .querytableright .searchtab2 .nothavensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .endcheck .querytable .querytableright .search3 .isapprove {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .endcheck .querytable .querytableright .search3 .notapprove {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .endcheck .querytable view:not(.caozuoword) {
+  padding-top: 10px;
+}
+.application .application_container .rightcontainer .resultmanagement {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #ecf0f1 solid;
+  border-left: 1px #ecf0f1 solid;
+}
+.application .application_container .rightcontainer .resultmanagement .xiangmuyear {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .xiangmuyear .selectbox {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .xiangmuname {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+}
+.application .application_container .rightcontainer .resultmanagement .xiangmuname .inputxiangmuname {
+  border: 2px #ecf0f1 solid;
+  width: 300rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .form-group .next {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px #ecf0f1 solid;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable .querytableleft .caozuo .caozuoword {
+  padding-top: 150rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable .querytableright {
+  margin-top: -20rpx;
+  margin-left: 60rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable .querytableright .searchtab2 .havensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable .querytableright .searchtab2 .nothavensubmit {
+  margin-top: -15rpx;
+}
+.application .application_container .rightcontainer .resultmanagement .querytable view:not(.caozuoword) {
+  padding-top: 10px;
+}

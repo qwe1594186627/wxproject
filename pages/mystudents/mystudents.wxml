@@ -1,0 +1,90 @@
+<view class="mystudents" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        学生信息
+    </view>
+
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="students" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    成员姓名
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    成员性别
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    成员学号
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    成员民族
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    出生日期
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    所在学院
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    所在专业
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    所在班级
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    手机
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    邮箱
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    项目中分工
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    是否为负责人
+                </view>
+               
+            </view>
+            <view class="databasecontent" hover-class="none" hover-stop-propagation="false" wx:for="{{memberinfo}}" wx:key="id">
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.name}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.sex}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.sno}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.nation}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.birth}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.college}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.major}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.class}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.phone}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.email}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.whatwork}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.isoneperson}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

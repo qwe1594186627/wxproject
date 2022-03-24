@@ -1,0 +1,51 @@
+<view class="myteachers" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        教师信息
+    </view>
+
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="teachers" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    老师姓名
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    老师民族
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    老师出生年月
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    老师手机
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    老师邮件
+                </view>
+
+               
+            </view>
+
+            <view class="databasecontent" hover-class="none" hover-stop-propagation="false" wx:for="{{teachersinfo}}" wx:key="id">
+                 <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.teachername}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.teachernation}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.teachersbirth}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.teachersphone}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    {{item.teachersemail}}
+                </view>
+            </view>
+
+        </view>
+    </view>
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

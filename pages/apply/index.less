@@ -1,0 +1,401 @@
+page{
+    height: 100%;
+}
+.application{
+    height: 100%;
+    .userlogin{
+        .notlogin{
+            padding-top: 20rpx;
+            padding-bottom: 20rpx;
+            text-align:center;
+        }
+    }
+    .application_container{
+        height: ~'calc(100vh)';
+        display: flex;
+        .leftmenu{
+            flex: 2;
+            .active{
+                color:black;
+                border-left: 5rpx solid currentColor;
+            }
+
+        }
+        .rightcontainer{
+            background-color: #ecf0f1;
+            flex: 5;
+            .applymanage{
+                border-top: 1px #ecf0f1 solid;
+                .xiangmuname{
+                    padding-top: 10rpx;
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    
+                    .inputxiangmuname{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                }
+
+                .form-group{
+                    .next{
+                        background-color: #ffffff;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+     
+                .createxiangmu{
+                     display: flex;
+                     flex-direction: column;
+                     flex-grow: 2;
+                     border-left:1px #ecf0f1 solid;
+                     padding-top: 10px;
+                     padding-bottom: 10px;
+                     margin-top: 20px;
+                     justify-content: space-between;
+                     background-color: #ffffff;
+     
+                     .createxiangmu2{
+                         padding-top: 10px;
+                         padding-bottom:10px ;
+                     }
+     
+                }
+                .querytable{
+                    margin-top:50rpx;
+                    background-color: #ffffff;
+                    display: flex;
+                    .querytableleft{
+                        margin-left: 50rpx;
+                        padding-top: 40rpx;
+                        padding-bottom: 40rpx;
+                        .project{
+                            padding-top: 30rpx;
+                        }
+                    }
+                    .querytableright{
+                        margin-left: 50rpx;
+                        padding-top: 40rpx;
+                        padding-bottom: 40rpx;
+                        .searchtable{
+                            .thesearch{
+                                padding-top: 30rpx;
+                            }
+                        }
+                        .searchtab2{
+                            .havensubmit{
+                                padding-top: 30rpx;
+                            }
+                            .nothavensubmit{
+                                padding-top: 30rpx;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .quarterlymanagement{
+                display: flex;
+                flex-direction: column;
+                border-top: 1px #ecf0f1 solid;
+                border-left: 1px #ecf0f1 solid;
+                .xiangmuyear{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    padding-top: 10rpx;
+                    padding-bottom: 10rpx;
+                    
+                    .selectbox{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                    
+                }
+
+                .xiangmuname{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    .inputxiangmuname{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                }
+
+                .form-group{
+                    .next{
+                        background-color: #ffffff;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .querytable{
+                    display: flex;
+                    background-color: #ffffff;
+                    border: 1px #ecf0f1 solid;
+                    margin-top: 10px;
+                    padding-top:10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    .querytableright{
+                        margin-top: -20rpx;
+                        margin-left: 60rpx;
+                        .searchtable4{
+                            .nothavensubmit{
+                                margin-top: -15rpx;
+                            }
+                            .havensubmit{
+                                margin-top: -15rpx;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+
+                .querytable view:not(.caozuoword){
+                    padding-top: 10px;
+                }
+                
+            }
+
+            .middlecheck{
+                display: flex;
+                flex-direction: column;
+                border-top: 1px #ecf0f1 solid;
+                border-left: 1px #ecf0f1 solid;
+                .xiangmuyear{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    padding-top: 10rpx;
+                    padding-bottom: 10rpx;
+                    
+                    .selectbox{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                   
+                    
+                }
+
+                .xiangmuname{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    .inputxiangmuname{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                }
+
+                .form-group{
+                    .next{
+                        background-color: #ffffff;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .querytable{
+                    display: flex;
+                    background-color: #ffffff;
+                    border: 1px #ecf0f1 solid;
+                    margin-top: 10px;
+                    padding-top:10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    .querytableright{
+                        margin-top: -20rpx;
+                        margin-left: 60rpx;
+                        .searchtab2{
+                            .havensubmit{
+                                margin-top: -15rpx;
+                            }
+                            .nothavensubmit{
+                                margin-top: -15rpx;
+                            }
+                        }
+                        .search3{
+                            .isapprove{
+                                margin-top: -15rpx;
+                            }
+                            .notapprove{
+                                margin-top: -15rpx;
+                            }
+                        }
+                    }
+                   
+                    
+                }
+
+                .querytable view:not(.caozuoword){
+                    padding-top: 10px;
+                }
+                
+            }
+
+            .endcheck{
+                display: flex;
+                flex-direction: column;
+                border-top: 1px #ecf0f1 solid;
+                border-left: 1px #ecf0f1 solid;
+                .xiangmuyear{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    padding-top: 10rpx;
+                    padding-bottom: 10rpx;
+                    
+                    .selectbox{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                    
+                }
+
+                .xiangmuname{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    .inputxiangmuname{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                }
+
+                .form-group{
+                    .next{
+                        background-color: #ffffff;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .querytable{
+                    display: flex;
+                    background-color: #ffffff;
+                    border: 1px #ecf0f1 solid;
+                    margin-top: 10px;
+                    padding-top:10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    .querytableright{
+                        margin-top: -20rpx;
+                        margin-left: 60rpx;
+                        .searchtab2{
+                            .havensubmit{
+                                margin-top: -15rpx;
+                            }
+                            .nothavensubmit{
+                                margin-top: -15rpx;
+                            }
+                        }
+                        .search3{
+                            .isapprove{
+                                margin-top: -15rpx;
+                            }
+                            .notapprove{
+                                margin-top: -15rpx;
+                            }
+                        }
+                    }
+                    
+                }
+
+                .querytable view:not(.caozuoword){
+                    padding-top: 10px;
+                }
+                
+            }
+
+
+            .resultmanagement{
+                display: flex;
+                flex-direction: column;
+                border-top: 1px #ecf0f1 solid;
+                border-left: 1px #ecf0f1 solid;
+                .xiangmuyear{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    padding-top: 10rpx;
+                    padding-bottom: 10rpx;
+                    
+                    .selectbox{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                    
+                }
+
+                .xiangmuname{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #ffffff;
+                    border: 1px #ffffff solid;
+                    .inputxiangmuname{
+                        border:2px #ecf0f1 solid;
+                        width: 300rpx;
+                    }
+                }
+
+                .form-group{
+                    .next{
+                        background-color: #ffffff;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .querytable{
+                    display: flex;
+                    background-color: #ffffff;
+                    border: 1px #ecf0f1 solid;
+                    margin-top: 10px;
+                    padding-top:10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    .querytableleft{
+                        .caozuo{
+                            .caozuoword{
+                                padding-top: 150rpx;
+                            }
+                        }
+                    }
+                    .querytableright{
+                        margin-top: -20rpx;
+                        margin-left: 60rpx;
+                        .searchtab2{
+                            .havensubmit{
+                                margin-top: -15rpx;
+                            }
+                            .nothavensubmit{
+                                margin-top: -15rpx;
+                            }
+                        }
+                    }
+                    
+                }
+
+                .querytable view:not(.caozuoword){
+                    padding-top: 10px;
+                }
+                
+            }
+            
+           
+        }
+    }
+}

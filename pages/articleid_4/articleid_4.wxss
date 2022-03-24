@@ -1,0 +1,20 @@
+.articleid_4 .content .p1 .p1title {
+  padding-bottom: 10px;
+}
+.articleid_4 .content .p1 .p1content {
+  padding-bottom: 10px;
+}
+.articleid_4 .content .p1 .p1contentbond {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.articleid_4 .content .p2 .p2title {
+  padding-bottom: 10px;
+}
+.articleid_4 .content .p2 .p2content {
+  padding-bottom: 10px;
+}
+.articleid_4 .content .p2 .p2contentbond {
+  padding-bottom: 10px;
+  font-weight: bold;
+}

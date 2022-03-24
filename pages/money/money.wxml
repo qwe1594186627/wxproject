@@ -1,0 +1,139 @@
+<view class="createexercise" hover-class="none" hover-stop-propagation="false">
+    <view class="first" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">4</view>
+            <view class="basicinfo" hover-class="none" hover-stop-propagation="false">经费预算</view>
+        </view>
+    </view>
+    <view class="information" hover-class="none" hover-stop-propagation="false">
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="moneysuooprt" hover-class="none" hover-stop-propagation="false">
+                <view class="moneysuooprtword" hover-class="none" hover-stop-propagation="false">
+                    支持经费（元）
+                </view>
+                <view class="inputmoneysuooprt" hover-class="none" hover-stop-propagation="false">
+                    <input type="text" placeholder="0" />
+                </view>
+            </view>
+            <view class="schoolmoney" hover-class="none" hover-stop-propagation="false">
+                <view class="schoolmoneyword" hover-class="none" hover-stop-propagation="false">
+                    校拨经费（元）
+                </view>
+                <view class="inputschoolmoney" hover-class="none" hover-stop-propagation="false">
+                    <input type="text" placeholder="0" />
+                </view>
+            </view>
+            <view class="applymoney" hover-class="none" hover-stop-propagation="false">
+                <view class="applymoneyword" hover-class="none" hover-stop-propagation="false">
+                    申请金额（元）
+                </view>
+                <view class="inputapplymoney" hover-class="none" hover-stop-propagation="false">
+                    <input type="text" placeholder="0" />
+                </view>
+            </view>
+        </view>
+        <view class="table-scrollable" hover-class="none" hover-stop-propagation="false">
+            <view class="moneytable" hover-class="none" hover-stop-propagation="false">
+                <view class="tablethead" hover-class="none" hover-stop-propagation="false">
+                    <view class="text-center">开支科目</view>
+                    <view class="text-center2">预算经费（元）</view>
+                    <view class="text-center2">主要用途</view>
+                </view>
+                <view class="tablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            业务费
+                        </view>
+
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="servicemoney">
+                                {{servicemoney}}
+                            </input>
+                        </view>
+
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+
+                            （1）计算、分析、测试费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="computemoney">
+                                {{computemoney}}
+                            </input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            （2）能源动力费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="energymoney"></input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            （3）会议、差旅费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="meetingmoney"></input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            （4）文献检索费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="articlecmoney"></input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            （5）论文出版费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="publishmoney">
+                            
+                            </input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            2.仪器设备购置费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="devicemoney">
+
+                            </input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            3.实验装置试制费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="device2money"></input>
+                        </view>
+                    </view>
+                    <view class="yewumoney" hover-class="none" hover-stop-propagation="false">
+                        <view class="yewumoneyword" hover-class="none" hover-stop-propagation="false">
+                            4.材料费
+                        </view>
+                        <view class="input" hover-class="none" hover-stop-propagation="false">
+                            <input type="text" placeholder="0/主要用途" bindinput="materialsmoney">
+                            </input>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="form-group2" hover-class="none" hover-stop-propagation="false">
+        <view class="submit" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gototeachersopinion">下一步</button>
+        </view>
+        <view class="cancle" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapplyaccording">返回</button>
+        </view>
+    </view>
+</view>

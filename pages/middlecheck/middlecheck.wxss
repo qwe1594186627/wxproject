@@ -1,0 +1,81 @@
+.middlecheck {
+  background-color: #e4e8ea;
+}
+.middlecheck .title {
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.middlecheck .content {
+  background-color: #fff;
+}
+.middlecheck .content .haveresult .wordhaveresult {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .haveresult .inputhaveresult {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.middlecheck .content .projectconclusion .projectconclusionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .projectconclusion .inputprojectconclusion {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.middlecheck .content .afterplan .afterplanword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .afterplan .inputafterplan {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.middlecheck .content .moneyplan .moneyplanword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .moneyplan .inputmoneyplan {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.middlecheck .content .problems .prolemsword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .problems .inputproblems {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.middlecheck .content .data .dataword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .data .inputdata {
+  margin-bottom: 10px;
+}
+.middlecheck .content .middlecheckfile .middlecheckfileword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.middlecheck .content .middlecheckfile .inputmiddlecheckfile {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.middlecheck .form-group {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.middlecheck .form-group .sub {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

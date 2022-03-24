@@ -1,0 +1,97 @@
+<view class="articleid_4" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        <view class="titlecontent"></view>
+    </view>
+    <view class="time" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="content" hover-class="none" hover-stop-propagation="false" >
+    
+        <view class="p1" hover-class="none" hover-stop-propagation="false">
+            <view class="p1title" hover-class="none" hover-stop-propagation="false">
+                一、大学生创新学术年会
+            </view>
+            <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                <view class="p1contentbond" hover-class="none" hover-stop-propagation="false">
+                    1.学术论文内容
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　学术论文应分别来源于不同的项目组（须标注“国创计划”项目编号），作者文责自负。如已在正式出版物上发表且标明了获得国家级大学生创新创业训练计划项目资助的学术论文，推荐时请标明发表的刊物名称等相应信息，并提交PDF格式的原文附件。
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　每篇学术论文字数不超过5000字（含图表），用中文撰写，内容主要反映学术研究情况（包括研究目的、方法、主要观点及结论等），由本科生为主完成。
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　请学校对申报论文严格把关，做好申报论文的查重查新工作，确保申报论文无抄袭、作假现象。
+                </view>
+                <view class="p1contentbond" hover-class="none" hover-stop-propagation="false">
+                    2.报告论文和优秀论文遴选
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　年会组织机构将遴选出约200篇学术论文参加大学生创新学术年会交流。大学生创新学术年会按学科分成10组，分组进行论文报告交流。每组3位专家点评，并由专家遴选出本组2项优秀论文，共选出20篇优秀论文，由年会组织机构颁发证书。
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    3.报告交流形式
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　大学生创新学术年会分会场由学生主持。每个报告时间为15分钟，其中论文作者报告10分钟，参会代表讨论3分钟，专家点评2分钟。
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    4.学术论文提交要求
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　学术论文以电子文档形式在网上进行提交，提交论文附“学术论文推荐意见表”，中央部委所属高校论文文件名为：“学校校名-lw序号(序号体现学校推荐论文的排序情况，1、2或3)-项目编号.doc”；各省（自治区或直辖市）教育厅（教委）按限额评审并推荐，论文文件名为：“省份名-lw序号-项目编号.doc”。
+                </view>
+                <view class="p1content" hover-class="none" hover-stop-propagation="false">
+                    　　具体要求见附件1，附件2。
+                </view>
+            </view>
+        </view>
+        <view class="p2" hover-class="none" hover-stop-propagation="false">
+            <view class="p2title" hover-class="none" hover-stop-propagation="false">
+                二、大学生创新创业改革成果项目经验交流
+            </view>
+            <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                <view class="p2contentbond" hover-class="none" hover-stop-propagation="false">1. 改革成果项目</view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　以网络展示为主，每个项目组1个展位，展位提供包括但不限于以下信息：
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">　　项目展板：</view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　项目类型：创新训练项目（创业训练项目或创业实践项目）；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">　　项目名称：</view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　项目编号：（须标注“国创计划”项目编号）；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">　　项目简介：200字左右；</view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　图片（含图表）：2－3张，要求有图注（不超过20字）；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　创新点描述：100字左右；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　项目成员信息：姓名、年级、专业；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　项目指导教师信息：姓名、职称、研究方向；
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">　　立项年份：</view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　曾参加国家级学科竞赛的项目,请注明：参加竞赛名称、获奖时间、奖励级别以及获奖作品形式。
+                </view>
+                <view class="p2contentbond" hover-class="none" hover-stop-propagation="false">
+                    2. 改革成果项目遴选和评选
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　年会组织机构遴选出约200个参展项目并通知项目入选高校另行排版提交。入选展示的项目，在第十四届全国大学生创新创业年会期间，由学生代表投票选出20项“我最喜爱的项目”；由高校教师和参会专家投票，结合评审专家组的投票，选出20项“最佳创意项目”。
+                </view>
+                <view class="p2contentbond" hover-class="none" hover-stop-propagation="false">
+                    3. 改革成果项目提交要求
+                </view>
+                <view class="p2content" hover-class="none" hover-stop-propagation="false">
+                    　　改革成果项目展示内容以电子文档形式在网上提交（内含改革成果项目推荐意见表），中央部委所属高校展板内容文件名为：“学校校名-zb序号(序号体现学校推荐项目的排序情况，1、2或3)-项目编号.doc”；各省（自治区或直辖市）教育厅（教委）按限额评审并推荐，地方高校展板内容文件名为：“省份名-zb序号-项目编号.doc”。欢迎省级教育行政部门提供1-2块展板内容参展，主要介绍各省（自治区或直辖市）大学生创新创业训练计划工作开展情况。
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

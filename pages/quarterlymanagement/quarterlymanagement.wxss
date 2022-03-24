@@ -1,0 +1,70 @@
+.subquarterlymanagement {
+  background-color: #e4e8ea;
+}
+.subquarterlymanagement .inputquarterlymanagement {
+  background-color: #fff;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectname .projectnameword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectname .inputprojectname {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.subquarterlymanagement .inputquarterlymanagement .projecaddtion .projecaddtionword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectresearch .projectresearchword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectresearch .upprojecaddtion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.subquarterlymanagement .inputquarterlymanagement .projecresult .projecresultword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projecresult .upprojecresult {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectreport .projectreportword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectreport .inputprojectreport {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px #e4e8ea solid;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectworkafter .projectworkafterword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectworkafter .inputprojectworkafter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px #e4e8ea solid;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectfile .projectfileword {
+  color: #1461cd;
+  font-weight: bold;
+}
+.subquarterlymanagement .inputquarterlymanagement .projectfile .upprojectfile {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.subquarterlymanagement .form-group {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.subquarterlymanagement .form-group .sub {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

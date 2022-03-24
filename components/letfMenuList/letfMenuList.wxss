@@ -1,0 +1,12 @@
+.item {
+  height: 80rpx;
+  display: list-item;
+  justify-content: center;
+  align-content: center;
+  font-size: 30rpx;
+  color: gray;
+}
+.active {
+  color: black;
+  border-left: 5rpx solid currentColor;
+}

@@ -1,0 +1,41 @@
+.teachersopinion {
+  background-color: #e4e8ea;
+}
+.teachersopinion .first {
+  background-color: #fff;
+  border: 1px #e4e8ea solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.teachersopinion .first .introduction .num {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 2px #32c5d2 solid;
+  color: #32c5d2;
+  border-radius: 50%;
+  padding: 12.5px 17px;
+}
+.teachersopinion .first .introduction .basicinfo {
+  color: #32c5d2;
+  text-align: center;
+}
+.teachersopinion .information {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.teachersopinion .information .form-group {
+  padding-top: 15px;
+}
+.teachersopinion .information .form-group .inputprojectname {
+  margin-top: 10px;
+  border: 2px #e4e8ea solid;
+}
+.teachersopinion .form-group2 {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.teachersopinion .form-group2 .subumit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

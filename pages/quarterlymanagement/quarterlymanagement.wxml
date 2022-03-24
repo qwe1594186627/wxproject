@@ -1,0 +1,87 @@
+<view class="subquarterlymanagement" hover-class="none" hover-stop-propagation="false">
+    <view class="inputquarterlymanagement" hover-class="none" hover-stop-propagation="false">
+        <view class="projectname" hover-class="none" hover-stop-propagation="false">
+            <view class="projectnameword" hover-class="none" hover-stop-propagation="false">
+                项目名称:
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false" wx:for="{{showprojectname}}">
+                {{item.projectname}}
+            </view>
+        </view>
+        <view class="projecaddtion" hover-class="none" hover-stop-propagation="false">
+            <view class="projecaddtionword" hover-class="none" hover-stop-propagation="false">
+                项目进展情况:
+            </view>
+            <view class="selectprojecaddtion" hover-class="none" hover-stop-propagation="false">
+                <view class="picker" hover-class="none" hover-stop-propagation="false">
+                    <picker class="" mode="selector" range="{{selectprojecaddtion}}" value="{{index}}" bindchange="bindchange">
+                        {{selectprojecaddtion[index]}}
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="projectresearch" hover-class="none" hover-stop-propagation="false">
+            <view class="projectresearchword" hover-class="none" hover-stop-propagation="false">
+                项目主要研究:
+            </view>
+            <view class="upprojecaddtion" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="addmainresearch">选择主要研究</button>
+            </view>
+            <view wx:for="{{mainresearch}}" wx:key="index">
+                {{item.projectmainresearch}}
+            </view>
+        </view>
+        <view class="projecresult" hover-class="none" hover-stop-propagation="false">
+            <view class="projecresultword" hover-class="none" hover-stop-propagation="false">
+                项目研究成果:
+            </view>
+            <view class="upprojecresult" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="addmainresearch2">选择研究成果</button>
+            </view>
+
+           
+            <view wx:for="{{mainresult}}">
+                {{item.projetresearchfindings}}
+            </view>
+            <view>
+            </view>
+        </view>
+        <view class="projectreport" hover-class="none" hover-stop-propagation="false">
+            <view class="projectreportword" hover-class="none" hover-stop-propagation="false">
+                项目季度报告（项目执行的进展情况，取得了哪些成绩，是否达到预期效果，以及在项目的开展过程中还存在哪些问题）:
+            </view>
+            <view class="inputprojectreport" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputprojectreport"></textarea>
+            </view>
+        </view>
+        <view class="projectworkafter" hover-class="none" hover-stop-propagation="false">
+            <view class="projectworkafterword" hover-class="none" hover-stop-propagation="false">
+                项目后期具体工作计划:
+            </view>
+            <view class="inputprojectworkafter" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputprojectworkafter"></textarea>
+            </view>
+        </view>
+        <view class="projectfile" hover-class="none" hover-stop-propagation="false">
+            <view class="projectfileword" hover-class="none" hover-stop-propagation="false">
+                附件: 支持附件格式为.doc,.docx,.pdf,.rar,.zip
+            </view>
+            <view class="upprojectfile" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="addmainresearch3">选择附件</button>
+            </view>
+            <view wx:for="{{quaterfile}}">
+                {{item.quarterlymanagementfile}}
+            </view>
+        </view>
+
+    </view>
+
+    <view class="form-group" hover-class="none" hover-stop-propagation="false">
+        <view class="sub" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="submittodatabase">提交</button>
+        </view>
+        <view class="back" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapply">返回</button>
+        </view>
+    </view>
+</view>

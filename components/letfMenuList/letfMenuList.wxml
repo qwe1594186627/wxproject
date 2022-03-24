@@ -1,0 +1,14 @@
+<view class="clickselect">
+    <view class="clickselect_titile">
+        <view 
+        class="item {{item.isactive?'active':''}}"
+        wx:for="{{letfMenuList}}"
+        wx:key="{{id}}"
+        bindtap="handleclickselect"
+        data-index="{{index}}"
+        >
+        {{item.name}}
+        </view>
+        
+    </view>
+</view>

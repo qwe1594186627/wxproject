@@ -1,0 +1,12 @@
+.myopoin .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.myopoin .content .opoin .fixcontent view {
+  padding-top: 20rpx;
+}
+.myopoin .fanhui {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

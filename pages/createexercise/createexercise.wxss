@@ -1,0 +1,56 @@
+.createexercise {
+  background-color: #e4e8ea;
+}
+.createexercise .firstintroduction {
+  background-color: #fff;
+  border: 1px #e4e8ea solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.createexercise .firstintroduction .introduction {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border: 2px #32c5d2 solid;
+  color: #32c5d2;
+  padding: 25px 15px;
+  border-radius: 50%;
+}
+.createexercise .firstintroduction .introduction .num {
+  padding-left: 25px;
+}
+.createexercise .information {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.createexercise .information .form-group {
+  padding: 5px;
+}
+.createexercise .information .form-group .inputprojectname {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputcollege {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputstarttime {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputfinishtime {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputprojectinfo {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputhostscience {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputteacherscience {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .inputteacherapprove {
+  border: 1px #e4e8ea solid;
+}
+.createexercise .information .form-group .next {
+  margin-bottom: 5px;
+}

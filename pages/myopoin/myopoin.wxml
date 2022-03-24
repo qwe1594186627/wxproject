@@ -1,0 +1,41 @@
+<view class="myopoin" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        意见相关
+    </view>
+
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="opoin" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    指导老师意见
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false" wx:for="{{opinioninfo}}" wx:key="id">
+                    {{item.teacheropinion}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    院系大学生创新创业训练计划专家组意见
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{opinioninfo}}" wx:key="id">
+                    {{item.professopoin}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    学校大学生创新创业训练计划专家组意见
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{opinioninfo}}" wx:key="id">
+                    {{item.schoolopoin}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    大学生创新创业训练计划领导小组审批意见
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{opinioninfo}}" wx:key="id">
+                    {{item.leadinput}}
+                </view>
+                
+               
+            </view>
+        </view>
+    </view>
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+page {
+  height: 100%;
+}
+.application {
+  height: 100%;
+}
+.application .application_container {
+  height: calc(100vh);
+  display: flex;
+}
+.application .application_container .leftmenu {
+  flex: 2;
+}
+.application .application_container .leftmenu .active {
+  color: black;
+  border-left: 5rpx solid currentColor;
+}
+.application .application_container .rightcontainer {
+  flex: 5;
+}

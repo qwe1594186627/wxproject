@@ -1,0 +1,32 @@
+.mystudents .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.mystudents .content .students {
+  overflow-x: scroll;
+}
+.mystudents .content .students .fixcontent {
+  display: flex;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mystudents .content .students .fixcontent view {
+  padding-left: 15rpx;
+  padding-right: 40rpx;
+}
+.mystudents .content .students .databasecontent {
+  display: flex;
+  white-space: nowrap;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.mystudents .content .students .databasecontent view {
+  padding-left: 15rpx;
+  padding-right: 40rpx;
+}
+.mystudents .fanhui {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

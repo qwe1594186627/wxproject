@@ -1,0 +1,52 @@
+<view class="myaccording" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        项目依据
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="applyaccording" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    研究目的
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.researchpurpose}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    研究内容
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.researchcontent}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    国内外研究现状
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.researchnowcondiotion}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    创新点与项目特色
+                </view>
+                 <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.creationandtrait}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    技术路线
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.technology}}
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    项目安排
+                </view>
+                <view class="" hover-class="none" hover-stop-propagation="false"wx:for="{{projectaccordinginfo}}" wx:key="id">
+                    {{item.arragement}}
+                </view>
+               
+            </view>
+
+        </view>
+    </view>
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

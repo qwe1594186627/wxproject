@@ -1,0 +1,41 @@
+.createexercise {
+  background-color: #e4e8ea;
+}
+.createexercise .first {
+  background-color: #fff;
+  border: 1px #e4e8ea solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.createexercise .first .introduction .num {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 2px #32c5d2 solid;
+  color: #32c5d2;
+  border-radius: 50%;
+  padding: 12.5px 17px;
+}
+.createexercise .first .introduction .basicinfo {
+  color: #32c5d2;
+  text-align: center;
+}
+.createexercise .information {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.createexercise .information .form-group {
+  padding-top: 15px;
+}
+.createexercise .information .form-group .inputprojectname {
+  margin-top: 10px;
+  border: 2px #e4e8ea solid;
+}
+.createexercise .form-group2 {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.createexercise .form-group2 .subumit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

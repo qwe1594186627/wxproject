@@ -1,0 +1,18 @@
+.mymoney .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.mymoney .content .money {
+  display: flex;
+}
+.mymoney .content .money .fixcontent {
+  padding-left: 60rpx;
+}
+.mymoney .content .money .fixcontent view {
+  margin-top: 30rpx;
+}
+.mymoney .fanhui {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/apply/index",
+    "pages/mine/index",
+    "pages/search/index",
+    "pages/createexercise/createexercise",
+    "pages/studensandteachers/studensandteachers",
+    "pages/apllyaccording/applyaccording",
+    "pages/money/money",
+    "pages/teachersopinion/teachersopinion",
+    "pages/uploadfile/uploadfile",
+    "pages/quarterlymanagement/quarterlymanagement",
+    "pages/middlecheck/middlecheck",
+    "pages/endmanager/endmanager",
+    "pages/resultmanagement/resultmanagement",
+    "pages/allresult/allresult",
+    "pages/articleid_4/articleid_4",
+    "pages/myproject/myproject",
+    "pages/mystudents/mystudents",
+    "pages/myteachers/myteachers",
+    "pages/myaccording/myaccording",
+    "pages/mymoney/mymoney",
+    "pages/myopoin/myopoin"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创新创业交流平台",
+    "navigationBarTextStyle": "black"
+  },
+
+  
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/homepage.png",
+        "selectedIconPath": "icons/homepages.png"
+      },
+      {
+        "pagePath": "pages/apply/index",
+        "text": "申报",
+        "iconPath": "icons/加.png",
+        "selectedIconPath": "icons/加s.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "icons/我的.png",
+        "selectedIconPath": "icons/我的s.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

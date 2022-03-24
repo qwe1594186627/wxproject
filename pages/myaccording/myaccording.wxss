@@ -1,0 +1,15 @@
+.myaccording .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.myaccording .content .applyaccording .fixcontent {
+  padding-left: 30rpx;
+}
+.myaccording .content .applyaccording .fixcontent view {
+  padding-top: 20rpx;
+}
+.myaccording .fanhui {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

@@ -1,0 +1,23 @@
+.myproject .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.myproject .content .project {
+  display: flex;
+}
+.myproject .content .project .fixcontent .projecttitle {
+  padding-left: 90rpx;
+  padding-top: 30rpx;
+}
+.myproject .content .project .fixcontent .projectcontent {
+  padding-left: 90rpx;
+}
+.myproject .content .project .databasecontent .projectcontent {
+  padding-top: 30rpx;
+  padding-right: 60rpx;
+}
+.myproject .fanhui {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

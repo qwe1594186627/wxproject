@@ -1,0 +1,52 @@
+<view class="mymoney" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">经费相关</view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="money" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="" hover-class="none" hover-stop-propagation="false">业务费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">计算分析测试费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">能源动力费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">会议差旅费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">文献检索费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">论文出版费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">仪器购置费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">实验装置费</view>
+                <view class="" hover-class="none" hover-stop-propagation="false">材料费</view>
+            </view>
+            <view class="databasecontent" hover-class="none" hover-stop-propagation="false" wx:for="{{budgetinfo}}" wx:key="id">
+                <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.servicemoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.servicemoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.computemoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.energymoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.meetingmoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.articlecmoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.publishmoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.devicemoney}}
+                    </view>
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        {{item.device2money}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

@@ -1,0 +1,107 @@
+<view class="myproject" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        我的项目
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="project" hover-class="none" hover-stop-propagation="false">
+            <view class="fixcontent" hover-class="none" hover-stop-propagation="false">
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目编号
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目名称
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目种类
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    所属学校
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目级别
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目类别
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    起始时间
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    完成时间
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    所属专业学科
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目年限
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    项目简介
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false" wx:for="{{projectinfo}}" wx:key="id">
+                    {{item.projectintroduction}}
+                </view>
+
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    负责人参与科研情况
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false" wx:for="{{projectinfo}}" wx:key="id">
+                    {{item.onepersonresearch}}
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    指导老师承担课题情况
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false" wx:for="{{projectinfo}}" wx:key="id">
+                    {{item.teachersprojet}}
+                </view>
+                <view class="projecttitle" hover-class="none" hover-stop-propagation="false">
+                    指导老师对项目支持情况
+                </view>
+                 <view class="projectcontent" hover-class="none" hover-stop-propagation="false" wx:for="{{projectinfo}}" wx:key="id">
+                    {{item.isteacherapprove}}
+                </view>
+                
+            </view>
+            <view class="databasecontent" hover-class="none" hover-stop-propagation="false" wx:for="{{projectinfo}}" wx:key="id"> 
+               <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectid}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectname}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectkind}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectschool}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectlevel}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projectwhatkind}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.starttime}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.endtime}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.whatsubjectandmajor}}
+                </view>
+                <view class="projectcontent" hover-class="none" hover-stop-propagation="false">
+                    {{item.projetyear}}
+                </view>
+                
+            </view>
+        </view>
+
+    
+        
+    </view>
+
+    <view class="fanhui" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotomine">返回</button>
+    </view>
+</view>

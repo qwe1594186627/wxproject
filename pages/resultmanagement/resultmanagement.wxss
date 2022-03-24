@@ -1,0 +1,420 @@
+.resultmanagement {
+  background-color: #e4e8ea;
+}
+.resultmanagement .introduction {
+  background-color: #fff;
+}
+.resultmanagement .content {
+  background-color: #fff;
+}
+.resultmanagement .content .projectname .projectnameword {
+  color: #1461cd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.resultmanagement .content .projectname .inputprojectname {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.resultmanagement .content .articlecondition .articleconditionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.resultmanagement .content .articlecondition .inputarticlecondition {
+  margin-bottom: 10px;
+}
+.resultmanagement .content .articlecondition .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+  margin: -200px 50rpx 0 45rpx;
+  border-radius: 3px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .articletitle .articletitleword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .articletitle .inputarticletitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .artistname .artistnameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .artistname .inputartistname {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .isprojectstudent .isprojectstudentword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .isprojectstudent .inputisprojectstudent {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .subjectkind .subjectword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .subjectkind .selectsubjectkind {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .articlekinds .articlekindsword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .articlekinds .selectarticlekinds {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .ispublish .ispublishword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .ispublish .inputispublishword {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .magazinename .magazinenameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .magazinename .inputmagazinename {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .magazineid .magazineidword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .magazineid .inputmagazineid {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .publishyear .publishyearword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .publishyear .inputpublishyear {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithindustry .iscombinedwithindustryword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithindustry .selectiscombinedwithindustry {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithplace .iscombinedwithplaceword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithplace .selectiscombinedwithplace {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithnation .iscombinedwithnationword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .iscombinedwithnation .selectiscombinedwithnation {
+  border: 1px #e4e8ea solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .file .fileword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .articlecondition .hiddenarticlecondition .file .buttonfileword {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .content .patentcondition .articleconditionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.resultmanagement .content .patentcondition .inputarticlecondition {
+  margin-bottom: 10px;
+}
+.resultmanagement .content .patentcondition .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+  margin: -200px 50rpx 0 45rpx;
+  border-radius: 3px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .articletitle .articletitleword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .articletitle .inputarticletitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .artistname .artistnameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .artistname .inputartistname {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .isprojectstudent .isprojectstudentword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .isprojectstudent .inputisprojectstudent {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .kinds .kindsword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .kinds .selectkinds {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .subjectkind .subjectword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .subjectkind .selectsubjectkind {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .magazineid .magazineidword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .magazineid .inputmagazineid {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentappliername .patentappliernameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentappliername .inputpatentappliername {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentapplydate .patentapplydateword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentapplydate .inputpatentapplydate {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentcondition .patentconditionword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentcondition .selectpatentcondition {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentid .patentidword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .patentid .inputpatentid {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .isyingyong .isyingyongword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .isyingyong .selectisyingyong {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .iscombinedwithindustry .iscombinedwithindustryword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .patentcondition .hiddenarticlecondition .iscombinedwithindustry .selectiscombinedwithindustry {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .articleconditionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.resultmanagement .content .awardscondition .inputarticlecondition {
+  margin-bottom: 10px;
+}
+.resultmanagement .content .awardscondition .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+  margin: -200px 50rpx 0 45rpx;
+  border-radius: 3px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardsname .awardsnameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardsname .inputawardsname {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardersname .awardersnameword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardersname .inputawardersname {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardskinds .awardskindsword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardskinds .selectawardskinds {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .subjectkind .subjectword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .subjectkind .selectsubjectkind {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardslevel .awardslevelwords {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardslevel .inputawardslevel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardstime .awardstimewords {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardstime .inputawardstime {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardsorganzation .awardsorganzationword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .awardsorganzation .inputawardsorganzation {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px #e4e8ea solid;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .file .fileword {
+  padding-top: 5px;
+  color: #1461cd;
+}
+.resultmanagement .content .awardscondition .hiddenawardscondition .file .buttonfileword {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resultmanagement .form-group {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.resultmanagement .form-group .subumit {
+  padding-top: 10px;
+}
+.resultmanagement .form-group .cancle {
+  padding-top: 10px;
+}

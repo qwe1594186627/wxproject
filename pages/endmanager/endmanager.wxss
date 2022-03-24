@@ -1,0 +1,98 @@
+.endmanager {
+  background-color: #e4e8ea;
+}
+.endmanager .title {
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.endmanager .content {
+  background-color: #fff;
+}
+.endmanager .content .conductcondition .conductconditionword {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 5px;
+}
+.endmanager .content .conductcondition .projetcback .projetcbackword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .conductcondition .projetcback .inputprojetcbackword {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .conductcondition .projectcharacter .projectcharacterword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .conductcondition .projectcharacter .inputprojectcharacter {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .conductcondition .teamwork .teamworkword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .conductcondition .teamwork .inputteamwork {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .conductcondition .resultsay .resultsayword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .conductcondition .resultsay .inputresultsay {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .researchrepot .researchrepotword {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 5px;
+}
+.endmanager .content .researchrepot .plancondition .planconditionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .researchrepot .plancondition .inputplancondition {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .researchrepot .conclusion .conclusionword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .researchrepot .conclusion .inputconclusion {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+}
+.endmanager .content .moneycondition .moneyconditionword {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 5px;
+}
+.endmanager .content .moneycondition .payformoney .payformoneyword {
+  color: #1461cd;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.endmanager .content .moneycondition .payformoney .inputpayformoney {
+  border: 1px #d5dde6 solid;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.endmanager .form-group {
+  margin-top: 15px;
+  background-color: #fff;
+}
+.endmanager .form-group .sub {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

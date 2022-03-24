@@ -1,0 +1,149 @@
+<view class="allresult" hover-class="none" hover-stop-propagation="false">
+    <view class="titile" hover-class="none" hover-stop-propagation="false">
+        <button>本项目</button>
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="articlecondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionname" hover-class="none" hover-stop-propagation="false">
+                发表论文情况:
+            </view>
+            <view class="articletable" hover-class="none" hover-stop-propagation="false">
+                <view class="articletablehead" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="th">学术论文题目</view>
+                        <view class="th">作者姓名</view>
+                        <view class="th">第一作者是否项目组学生</view>
+                        <view class="th">论文类别</view>
+                        <view class="th">学科门类</view>
+                        <view class="th">期刊名称</view>
+                        <view class="th">发表刊号</view>
+                        <view class="th">成果附件</view>
+                    </view>
+                </view>
+                <view class="articletablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="tr" hover-class="none" hover-stop-propagation="false">
+                        <view class="trd" hover-class="none" hover-stop-propagation="false"  wx:for="{{articleinfo}}">
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false">
+                                {{item.Thesistitle}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false">
+                                {{item.Authorsname}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.Isthefirstauthorprojectmember}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.Thesiscategory}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.category}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.Journalname}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.serialnumbersofperiodicals}}
+                            </view>
+                            <view class="tdh" hover-class="none" hover-stop-propagation="false" >
+                                {{item.resultfile}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="patentcondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionname2" hover-class="none" hover-stop-propagation="false">
+                申请专利情况:
+            </view>
+            <view class="articletable" hover-class="none" hover-stop-propagation="false">
+                <view class="articletablehead" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="th">专利（著作权）名称</view>
+                        <view class="th">发明人姓名</view>
+                        <view class="th">类型</view>
+                        <view class="th">学科门类</view>
+                        <view class="th">专利（著作权）号</view>
+                        <view class="th">专利（著作权）权人身份</view>
+                    </view>
+                </view>
+                <view class="articletablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="tr" hover-class="none" hover-stop-propagation="false">
+                        <view class="td" hover-class="none" hover-stop-propagation="false"wx:for="{{patentinfo}}">
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.patentname}}
+                            </view>
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.InventorName}}
+                            </view>
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.patenttype}}
+                            </view>
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.Disciplinecategory}}
+                            </view>
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.patentid}}
+                            </view>
+                            <view class="patent" hover-class="none" hover-stop-propagation="false">
+                                {{item.patentcondition}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="awardscondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionname3" hover-class="none" hover-stop-propagation="false">
+                竞赛获奖情况:
+            </view>
+            <view class="articletable" hover-class="none" hover-stop-propagation="false">
+                <view class="articletablehead" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="th">竞赛名称（官方全称）</view>
+                        <view class="th">获奖人姓名</view>
+                        <view class="th">获奖类别</view>
+                        <view class="th">学科门类</view>
+                        <view class="th">获奖等级</view>
+                        <view class="th">获奖时间</view>
+                        <view class="th">获奖组织单位</view>
+                        <view class="th">成果附件</view>
+                    </view>
+                </view>
+                <view class="articletablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="tr" hover-class="none" hover-stop-propagation="false">
+                        <view class="td" hover-class="none" hover-stop-propagation="false" wx:for="{{awardsinfo}}">
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.competitionname}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.Nameofwinner}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.rewardkind}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.subject}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.rewardlevel}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.rewardtime}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.rewardorganization}}
+                            </view>
+                            <view class="awards" hover-class="none" hover-stop-propagation="false">
+                                {{item.competitionfile}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="back" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="gotoapply">返回</button>
+    </view>
+</view>

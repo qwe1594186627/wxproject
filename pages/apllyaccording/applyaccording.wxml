@@ -1,0 +1,78 @@
+<view class="createexercise" hover-class="none" hover-stop-propagation="false">
+    <view class="first" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">3</view>
+            <view class="basicinfo" hover-class="none" hover-stop-propagation="false">立项依据</view>
+        </view>
+    </view>
+    <view class="information" hover-class="none" hover-stop-propagation="false">
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                （一）研究目的
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getpurpose">
+                    {{getresearchpurpose}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="college" hover-class="none" hover-stop-propagation="false">（二）研究内容</view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getcontent">
+                    {{getresearchcontent}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectlevel" hover-class="none" hover-stop-propagation="false">
+                （三）国、内外研究现状和发展动态
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getdevelopment">
+                    {{getresearchnowcondiotion}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectkinds" hover-class="none" hover-stop-propagation="false">
+                （四）创新点与项目特色
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getcreation">
+                    {{getcreationandtrait}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="starttime" hover-class="none" hover-stop-propagation="false">
+                （五）技术路线、拟解决的问题及预期成果
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="gettech">
+                    {{gettechnology}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="finishtime" hover-class="none" hover-stop-propagation="false">
+                （六）项目研究进度安排
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getarrage">
+                    {{getarragement}}
+                </textarea>
+            </view>
+        </view>
+        
+    </view>
+
+    <view class="form-group2" hover-class="none" hover-stop-propagation="false">
+            <view class="subumit" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotomoney">下一步</button>
+            </view>
+            <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotostudensandteachers">返回</button>
+            </view>
+        </view>
+</view>

@@ -1,0 +1,41 @@
+.uploadfile {
+  background-color: #e4e8ea;
+}
+.uploadfile .first {
+  background-color: #fff;
+  border: 1px #e4e8ea solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.uploadfile .first .introduction .num {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 2px #32c5d2 solid;
+  color: #32c5d2;
+  border-radius: 50%;
+  padding: 12.5px 17px;
+}
+.uploadfile .first .introduction .basicinfo {
+  color: #32c5d2;
+  text-align: center;
+}
+.uploadfile .content {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.uploadfile .content .applytable {
+  padding-top: 10px;
+}
+.uploadfile .content .moduledownload {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.uploadfile .form-group {
+  background-color: #fff;
+  margin-top: 15px;
+}
+.uploadfile .form-group .next {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

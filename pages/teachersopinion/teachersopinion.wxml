@@ -1,0 +1,52 @@
+<view class="teachersopinion" hover-class="none" hover-stop-propagation="false">
+    <view class="first" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">5</view>
+            <view class="basicinfo" hover-class="none" hover-stop-propagation="false">意见</view>
+        </view>
+    </view>
+    <view class="information" hover-class="none" hover-stop-propagation="false">
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectname" hover-class="none" hover-stop-propagation="false">
+                指导教师意见
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getteaopoin"></textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectlevel" hover-class="none" hover-stop-propagation="false">
+                院系大学生创新创业训练计划专家组意见
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getprofessopoin"></textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectkinds" hover-class="none" hover-stop-propagation="false">
+                学校大学生创新创业训练计划专家组意见
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getschoolopoin"></textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="starttime" hover-class="none" hover-stop-propagation="false">
+                大学生创新创业训练计划领导小组审批意见
+            </view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getleadinput"></textarea>
+            </view>
+        </view>
+       
+    </view>
+
+     <view class="form-group2" hover-class="none" hover-stop-propagation="false">
+            <view class="subumit" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotouploadfile">下一步</button>
+            </view>
+            <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotomoney">返回</button>
+            </view>
+        </view>
+</view>

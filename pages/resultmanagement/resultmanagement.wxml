@@ -1,0 +1,410 @@
+<view class="resultmanagement" hover-class="none" hover-stop-propagation="false">
+
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="projectname" hover-class="none" hover-stop-propagation="false">
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false" wx:for="{{showprojectname}}">
+                {{item.projectname}}
+            </view>
+        </view>
+        <view class="articlecondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionword" hover-class="none" hover-stop-propagation="false">
+                发表论文情况
+            </view>
+            <view class="inputarticlecondition" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="powerDrawer" data-statu="open">+添加论文发表情况</button>
+            </view>
+            <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+            <view class="hiddenarticlecondition" wx:if="{{showModalStatus}}" animation="{{animationData}}">
+                <view class="articletitle" hover-class="none" hover-stop-propagation="false">
+                    <view class="articletitleword" hover-class="none" hover-stop-propagation="false">
+                        学术论文题目:
+                    </view>
+                    <view class="inputarticletitle" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="学术论文题目" bindinput="getinputarticletitle" />
+                    </view>
+                </view>
+                <view class="artistname" hover-class="none" hover-stop-propagation="false">
+                    <view class="artistnameword" hover-class="none" hover-stop-propagation="false">
+                        作者姓名:(所有作者，按论文中顺序排列，其中项目组成员需标注*号)
+                    </view>
+                    <view class="inputartistname" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="作者姓名" bindinput="getinputartistname" />
+                    </view>
+                </view>
+                <view class="isprojectstudent" hover-class="none" hover-stop-propagation="false">
+                    <view class="isprojectstudentword" hover-class="none" hover-stop-propagation="false">
+                        第一作者是否项目组学生:
+                    </view>
+                    <view class="inputisprojectstudent" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index1}}" bindchange="bindPickerChange1">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index1]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="subjectkind" hover-class="none" hover-stop-propagation="false">
+                    <view class="subjectword" hover-class="none" hover-stop-propagation="false">
+                        学科门类：
+                    </view>
+                    <view class="selectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectsubjectkind" range="{{issubjectkind}}" value="{{index2}}" bindchange="bindPickerChange2">
+                            <view class="inputselectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                                {{issubjectkind[index2]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="articlekinds" hover-class="none" hover-stop-propagation="false">
+                    <view class="articlekindsword" hover-class="none" hover-stop-propagation="false">
+                        论文类别:
+                    </view>
+                    <view class="selectarticlekinds" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectarticlekinds" range="{{isarticlekinds}}" value="{{index3}}" bindchange="bindPickerChange3">
+                            <view class="inputisselectarticlekinds" hover-class="none" hover-stop-propagation="false">
+                                {{isarticlekinds[index3]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="ispublish" hover-class="none" hover-stop-propagation="false">
+                    <view class="ispublishword" hover-class="none" hover-stop-propagation="false">
+                        是否发表:
+                    </view>
+                    <view class="inputispublishword" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index4}}" bindchange="bindPickerChange4">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index4]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="magazinename" hover-class="none" hover-stop-propagation="false">
+                    <view class="magazinenameword" hover-class="none" hover-stop-propagation="false">
+                        期刊名称:
+                    </view>
+                    <view class="inputmagazinename" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="期刊名称" bindinput="getinputmagazinename" />
+                    </view>
+                </view>
+                <view class="magazineid" hover-class="none" hover-stop-propagation="false">
+                    <view class="magazineidword" hover-class="none" hover-stop-propagation="false">
+                        发表刊号：
+                    </view>
+                    <view class="inputmagazineid" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="发表刊号" bindinput="getinputmagazineid" />
+                    </view>
+                </view>
+                <view class="publishyear" hover-class="none" hover-stop-propagation="false">
+                    <view class="publishyearword" hover-class="none" hover-stop-propagation="false">
+                        发表年份及卷（期）数:
+                    </view>
+                    <view class="inputpublishyear" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="发表年份及卷（期）数" bindinput="getinputpublishyear" />
+                    </view>
+                </view>
+                <view class="iscombinedwithindustry" hover-class="none" hover-stop-propagation="false">
+                    <view class="iscombinedwithindustryword" hover-class="none" hover-stop-propagation="false">
+                        是否与行业联合发表:
+                    </view>
+                    <view class="selectiscombinedwithindustry" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index5}}" bindchange="bindPickerChange5">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index5]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="iscombinedwithplace" hover-class="none" hover-stop-propagation="false">
+                    <view class="iscombinedwithplaceword" hover-class="none" hover-stop-propagation="false">
+                        是否与地方联合发表:
+                    </view>
+                    <view class="selectiscombinedwithplace" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index6}}" bindchange="bindPickerChange6">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index6]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="iscombinedwithnation" hover-class="none" hover-stop-propagation="false">
+                    <view class="iscombinedwithnationword" hover-class="none" hover-stop-propagation="false">
+                        是否与国际联合发表:
+                    </view>
+                    <view class="selectiscombinedwithnation" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index7}}" bindchange="bindPickerChange7">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index7]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="file" hover-class="none" hover-stop-propagation="false">
+                    <view class="fileword" hover-class="none" hover-stop-propagation="false">
+                        成果附件:
+                    </view>
+                    <view class="buttonfileword" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="buttonfileword1">+选择附件</button>
+                    </view>
+                </view>
+                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                    <view class="subumit" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="submitpaper">提交</button>
+                    </view>
+                    <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="powerDrawer" data-statu="close">取消</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="patentcondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionword" hover-class="none" hover-stop-propagation="false">
+                申请专利（著作权）情况:
+            </view>
+            <view class="inputarticlecondition" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="powerDrawer2" data-statu="open">+添加专利（著作权）情况</button>
+            </view>
+            <view class="drawer_screen" bindtap="powerDrawer2" data-statu="close" wx:if="{{showModalStatus2}}"></view>
+            <view class="hiddenarticlecondition" wx:if="{{showModalStatus2}}" animation="{{animationData}}">
+                <view class="articletitle" hover-class="none" hover-stop-propagation="false">
+                    <view class="articletitleword" hover-class="none" hover-stop-propagation="false">
+                        专利（著作权）名称:
+                    </view>
+                    <view class="inputarticletitle" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="学术论文题目" bindinput="getinputpatenttitle"></input>
+                    </view>
+                </view>
+                <view class="artistname" hover-class="none" hover-stop-propagation="false">
+                    <view class="artistnameword" hover-class="none" hover-stop-propagation="false">
+                        发明人姓名:(所有发明人姓名，按专利（著作权）中顺序排列，其中项目组成员需标注*号)
+                    </view>
+                    <view class="inputartistname" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="作者姓名" bindinput="getinputpatentname" />
+                    </view>
+                </view>
+                <view class="isprojectstudent" hover-class="none" hover-stop-propagation="false">
+                    <view class="isprojectstudentword" hover-class="none" hover-stop-propagation="false">
+                        第一完成人是否项目组学生:
+                    </view>
+                    <view class="inputisprojectstudent" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index21}}" bindchange="bindPickerChange21">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index21]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="kinds" hover-class="none" hover-stop-propagation="false">
+                    <view class="kindsword" hover-class="none" hover-stop-propagation="false">
+                        类型:
+                    </view>
+                    <view class="selectkinds" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{ispatentkind}}" value="{{index22}}" bindchange="bindPickerChange22">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{ispatentkind[index22]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="subjectkind" hover-class="none" hover-stop-propagation="false">
+                    <view class="subjectword" hover-class="none" hover-stop-propagation="false">
+                        学科门类：
+                    </view>
+                    <view class="selectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectsubjectkind" range="{{issubjectkind}}" value="{{index23}}" bindchange="bindPickerChange23">
+                            <view class="inputselectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                                {{issubjectkind[index23]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="magazineid" hover-class="none" hover-stop-propagation="false">
+                    <view class="magazineidword" hover-class="none" hover-stop-propagation="false">
+                        专利（著作权）号:
+                    </view>
+                    <view class="inputmagazineid" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="专利（著作权）号" bindinput="getinputpatentid" />
+                    </view>
+                </view>
+                <view class="patentappliername" hover-class="none" hover-stop-propagation="false">
+                    <view class="patentappliernameword" hover-class="none" hover-stop-propagation="false">
+                        专利（著作权）权人:
+                    </view>
+                    <view class="inputpatentappliername" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="专利（著作权）权人" bindinput="getinputpatentappliername" />
+                    </view>
+                </view>
+                <view class="patentapplydate" hover-class="none" hover-stop-propagation="false">
+                    <view class="patentapplydateword" hover-class="none" hover-stop-propagation="false">
+                        专利（著作权）申请日期:
+                    </view>
+                    <view class="inputpatentapplydate" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="专利（著作权）申请日期" bindinput="getinputpatentapplydate" />
+                    </view>
+                </view>
+                <view class="patentcondition" hover-class="none" hover-stop-propagation="false">
+                    <view class="patentconditionword" hover-class="none" hover-stop-propagation="false">
+                        专利状态:
+                    </view>
+                    <view class="selectpatentcondition" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectsubjectkind" range="{{ispatentcondition}}" value="{{index24}}" bindchange="bindPickerChange24">
+                            <view class="inputselectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                                {{ispatentcondition[index24]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="patentid" hover-class="none" hover-stop-propagation="false">
+                    <view class="patentidword" hover-class="none" hover-stop-propagation="false">
+                        授权（著作权）号:
+                    </view>
+                    <view class="inputpatentid" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="授权（著作权）号:" bindinput="getinputgrantpatentid" />
+                    </view>
+                </view>
+                <view class="isyingyong" hover-class="none" hover-stop-propagation="false">
+                    <view class="isyingyongword" hover-class="none" hover-stop-propagation="false">
+                        是否应用:
+                    </view>
+                    <view class="selectisyingyong" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index25}}" bindchange="bindPickerChange25">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index25]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="iscombinedwithindustry" hover-class="none" hover-stop-propagation="false">
+                    <view class="iscombinedwithindustryword" hover-class="none" hover-stop-propagation="false">
+                        是否与行业联合发表:
+                    </view>
+                    <view class="selectiscombinedwithindustry" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isprojectstudentpicker" range="{{isprojectstudent}}" value="{{index26}}" bindchange="bindPickerChange26">
+                            <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                                {{isprojectstudent[index26]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="file" hover-class="none" hover-stop-propagation="false">
+                    <view class="fileword" hover-class="none" hover-stop-propagation="false">
+                        成果附件:
+                    </view>
+                    <view class="buttonfileword" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="buttonfileword2">+选择附件</button>
+                    </view>
+                </view>
+
+                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                    <view class="subumit" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="submitpatent">提交</button>
+                    </view>
+                    <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="powerDrawer2" data-statu="close">取消</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="awardscondition" hover-class="none" hover-stop-propagation="false">
+            <view class="articleconditionword" hover-class="none" hover-stop-propagation="false">
+                竞赛获奖情况:
+            </view>
+            <view class="inputarticlecondition" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="powerDrawer3" data-statu="open">+添加竞赛获奖情况</button>
+            </view>
+            <view class="drawer_screen" bindtap="powerDrawer3" data-statu="close" wx:if="{{showModalStatus3}}"></view>
+            <view class="hiddenawardscondition" wx:if="{{showModalStatus3}}" animation="{{animationData}}">
+                <view class="awardsname" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardsnameword" hover-class="none" hover-stop-propagation="false">
+                        竞赛名称（官方全称）:
+                    </view>
+                    <view class="inputawardsname" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="竞赛名称（官方全称）" bindinput="getinputawardsname" />
+                    </view>
+                </view>
+                <view class="awardersname" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardersnameword" hover-class="none" hover-stop-propagation="false">
+                        获奖人姓名:(所有获奖人，按获奖证书中顺序排列，其中项目组成员需标注*号)
+                    </view>
+                    <view class="inputawardersname" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="获奖人姓名" bindinput="getinputawardersname" />
+                    </view>
+                </view>
+                <view class="awardskinds" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardskindsword" hover-class="none" hover-stop-propagation="false">
+                        获奖类别:
+                    </view>
+                    <view class="selectawardskinds" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectsubjectkind" range="{{isawardskinds}}" value="{{index31}}" bindchange="bindPickerChange31">
+                            <view class="inputselectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                                {{isawardskinds[index31]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="subjectkind" hover-class="none" hover-stop-propagation="false">
+                    <view class="subjectword" hover-class="none" hover-stop-propagation="false">
+                        学科门类：
+                    </view>
+                    <view class="selectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                        <picker class="isselectsubjectkind" range="{{issubjectkind}}" value="{{index}}" bindchange="bindPickerChange32">
+                            <view class="inputselectsubjectkind" hover-class="none" hover-stop-propagation="false">
+                                {{issubjectkind[index32]}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+                <view class="awardslevel" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardslevelwords" hover-class="none" hover-stop-propagation="false">
+                        获奖等级:
+                    </view>
+                    <view class="inputawardslevel" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="获奖等级" bindinput="getinputawardslevel" />
+                    </view>
+                </view>
+                <view class="awardstime" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardstimewords" hover-class="none" hover-stop-propagation="false">
+                        获奖时间:
+                    </view>
+                    <view class="inputawardstime" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="获奖时间" bindinput="getinputawardstime" />
+                    </view>
+                </view>
+                <view class="awardsorganzation" hover-class="none" hover-stop-propagation="false">
+                    <view class="awardsorganzationword" hover-class="none" hover-stop-propagation="false">
+                        获奖组织单位:
+                    </view>
+                    <view class="inputawardsorganzation" hover-class="none" hover-stop-propagation="false">
+                        <input type="text" placeholder="获奖组织单位" bindinput="getinputawardsorganzation" />
+                    </view>
+                </view>
+                <view class="file" hover-class="none" hover-stop-propagation="false">
+                    <view class="fileword" hover-class="none" hover-stop-propagation="false">
+                        成果附件:
+                    </view>
+                    <view class="buttonfileword" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="buttonfileword3">+选择附件</button>
+                    </view>
+                </view>
+
+                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                    <view class="subumit" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="submitawards">提交</button>
+                    </view>
+                    <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                        <button bindtap="powerDrawer3" data-statu="close">取消</button>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <view class="form-group" hover-class="none" hover-stop-propagation="false">
+        <view class="subumit" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="showsubmit">提交</button>
+        </view>
+        <view class="cancle" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapply">返回</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,44 @@
+<view class="uploadfile" hover-class="none" hover-stop-propagation="false">
+    <view class="first" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">6</view>
+            <view class="basicinfo" hover-class="none" hover-stop-propagation="false">上传附件</view>
+        </view>
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="applytable" hover-class="none" hover-stop-propagation="false">
+            <view class="inputapplytable" hover-class="none" hover-stop-propagation="false">
+                申请表电子版
+            </view>
+            <view class="applytable" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="uploadapplytable">文件上传</button>
+            </view>
+
+            <view wx:for="{{getdianziform}}">
+                {{item.projectfile}}
+            </view>
+        </view>
+        <view class="moduledownload" hover-class="none" hover-stop-propagation="false">
+            <view class="moduledownloadword" hover-class="none" hover-stop-propagation="false">
+                模板下载
+            </view>
+            <view class="moduledownload" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="dowloadapplytable">点击下载模板</button>
+            </view>
+        </view>
+       
+    </view>
+
+     <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="next" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="submitall">提交</button>
+            </view>
+            <view class="back" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gototeachersopinion">返回</button>
+            </view>
+
+            <view>
+                <button bindtap="gotoapply">返回主页面</button>
+            </view>
+        </view>
+</view>

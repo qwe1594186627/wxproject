@@ -1,0 +1,80 @@
+<view class="middlecheck" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">
+        <view wx:for="{{showprojectname}}">
+            {{item.projectname}}
+        </view>
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="haveresult" hover-class="none" hover-stop-propagation="false">
+            <view class="wordhaveresult" hover-class="none" hover-stop-propagation="false">
+                已取得成果（参加学术会议、学术沙龙和发表论文、申请专利、参加竞赛活动等详细情况）
+            </view>
+            <view class="inputhaveresult" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getinputhaveresult"></textarea>
+            </view>
+        </view>
+        <view class="projectconclusion" hover-class="none" hover-stop-propagation="false">
+            <view class="projectconclusionword" hover-class="none" hover-stop-propagation="false">
+                项目进展状况小结
+            </view>
+            <view class="inputprojectconclusion" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getinputprojectconclusion"></textarea>
+            </view>
+        </view>
+        <view class="afterplan" hover-class="none" hover-stop-propagation="false">
+            <view class="afterplanword" hover-class="none" hover-stop-propagation="false">
+                项目今后计划
+            </view>
+            <view class="inputafterplan" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getinputafterplan"></textarea>
+            </view>
+        </view>
+        <view class="moneyplan" hover-class="none" hover-stop-propagation="false">
+            <view class="moneyplanword" hover-class="none" hover-stop-propagation="false">
+                经费使用情况和经费安排计划
+            </view>
+            <view class="inputmoneyplan" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getinputmoneyplan"></textarea>
+            </view>
+        </view>
+        <view class="problems" hover-class="none" hover-stop-propagation="false">
+            <view class="prolemsword" hover-class="none" hover-stop-propagation="false">
+                项目存在问题及解决方案
+            </view>
+            <view class="inputproblems" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="getinputproblems"></textarea>
+            </view>
+        </view>
+        <view class="data" hover-class="none" hover-stop-propagation="false">
+            <view class="dataword" hover-class="none" hover-stop-propagation="false">
+                实验原始数据: 支持附件格式为.png,.jpg,.jpeg,.zip,.rar,.doc,.docx,.xls,.xlsx,.txt,.pdf
+            </view>
+            <view class="inputdata" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="inputdata">+上传实验数据附件</button>
+            </view>
+            <view wx:for="{{expdata}}">
+                {{item.Experimentalrawdata}}
+            </view>
+        </view>
+        <view class="middlecheckfile" hover-class="none" hover-stop-propagation="false">
+            <view class="middlecheckfileword" hover-class="none" hover-stop-propagation="false">
+                中期检查附件: 支持附件格式为.doc,.docx,.pdf,.rar,.zip
+            </view>
+            <view class="inputmiddlecheckfile" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="inputmiddlecheckfile">+中期检查上传附件</button>
+            </view>
+
+            <view wx:for="{{middlecheckfile}}">
+            {{item.middlefile}}
+            </view>
+        </view>
+    </view>
+    <view class="form-group" hover-class="none" hover-stop-propagation="false">
+        <view class="sub" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="submitdatatodatabase">提交</button>
+        </view>
+        <view class="back" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapply">返回</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,324 @@
+<view class="studentsandteachers" hover-class="none" hover-stop-propagation="false">
+    <view class="firstintroduction" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">2</view>
+            <view class="basicinfowrap" hover-class="none" hover-stop-propagation="false">
+                <view class="basicinfo" hover-class="none" hover-stop-propagation="false">
+                    成员与指导老师
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="students" hover-class="none" hover-stop-propagation="false">
+            <view class="studentsperson" hover-class="none" hover-stop-propagation="false">
+                项目成员
+            </view>
+            <view class="add" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="powerDrawer" data-statu="open">添加</button>
+            </view>
+            <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+            <view class="hiddencontent" wx:if="{{showModalStatus}}" animation="{{animationData}}">
+                <view class="dialog" hover-class="none" hover-stop-propagation="false">
+                    <form bindsubmit="formBindsubmit">
+                        <view class="changemodule" hover-class="none" hover-stop-propagation="false">
+                            <view class="title-con" hover-class="none" hover-stop-propagation="false">
+                                <view class="title" hover-class="none" hover-stop-propagation="false">
+                                    添加项目新成员
+                                </view>
+                            </view>
+                            <view class="contentinner" hover-class="none" hover-stop-propagation="false">
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="name" hover-class="none" hover-stop-propagation="false">
+                                        姓名
+                                    </view>
+                                    <view class="studentname" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentname" placeholder="姓名" bindinput="getstudentname"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="sex" hover-class="none" hover-stop-propagation="false">
+                                        性别
+                                    </view>
+                                    <view class="studentsex" hover-class="none" hover-stop-propagation="false">
+                                        <radio-group name="studentsex" bindchange="studentsex">
+                                            <radio class="radio"  wx:for="{{sex}}"  wx:key="name" value="{{item.name}}">
+                                                {{item.name}}
+                                            </radio>
+                                        </radio-group>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="sno" hover-class="none" hover-stop-propagation="false">
+                                        学号
+                                    </view>
+                                    <view class="studentsno" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentsno" placeholder="学号" bindinput="studentsno"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="nation" hover-class="none" hover-stop-propagation="false">
+                                        民族
+                                    </view>
+                                    <view class="studentnation" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentnation" placeholder="民族" bindinput="studentnation"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="birth" hover-class="none" hover-stop-propagation="false">
+                                        出生年月
+                                    </view>
+                                    <view class="studentbirth" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentbirth" placeholder="出生年月" bindinput="studentbirth"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="college" hover-class="none" hover-stop-propagation="false">
+                                        所在学院
+                                    </view>
+                                    <view class="studentcollege" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentcollege" placeholder="所在学院" bindinput="studentcollege"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="major" hover-class="none" hover-stop-propagation="false">
+                                        专业
+                                    </view>
+                                    <view class="studentmajor" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentmajor" placeholder="专业" bindinput="studentmajor"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="classname" hover-class="none" hover-stop-propagation="false">
+                                        班级
+                                    </view>
+                                    <view class="studentclassname" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentclassname" placeholder="班级" bindinput="studentclassname"></input>
+                                    </view>
+                                </view>
+                               
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="phone" hover-class="none" hover-stop-propagation="false">
+                                        手机
+                                    </view>
+                                    <view class="studentphone" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentphone" placeholder="手机" bindinput="studentphone"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="Email" hover-class="none" hover-stop-propagation="false">
+                                        E-mail
+                                    </view>
+                                    <view class="studentEmail" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentEmail" placeholder="E-mail" bindinput="studentEmail"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="work" hover-class="none" hover-stop-propagation="false">
+                                        项目中的分工
+                                    </view>
+                                    <view class="studentwork" hover-class="none" hover-stop-propagation="false">
+                                        <textarea name="studentwork" id="" cols="30" rows="10" bindinput="studentwork"></textarea>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="duty" hover-class="none" hover-stop-propagation="false">
+                                        是否是负责人
+                                    </view>
+                                    <view class="studentduty" hover-class="none" hover-stop-propagation="false">
+                                        <picker name="studentduty" class="picker" mode="selector" range="{{isconmmander}}" value="{{index}}" bindchange="bindPickerChange">
+                                            <view class="studentduty" hover-class="none" hover-stop-propagation="false">
+                                                {{isconmmander[index]}}
+                                            </view>
+                                        </picker>
+                                    </view>
+                                </view>
+                                <view class="btn" hover-class="none" hover-stop-propagation="false">
+                                    <view class="submit" hover-class="none" hover-stop-propagation="false">
+                                        <button bindtap="formBindsubmit">提交</button>
+                                    </view>
+                                    <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                                        <button bindtap="powerDrawer" data-statu="close">取消</button>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </form>
+                </view>
+            </view>
+            <view class="table" hover-class="none" hover-stop-propagation="false">
+                <view class="tablehead" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="th">姓名</view>
+                        <view class="th">性别</view>
+                        <view class="th">学号</view>
+                        <view class="th">民族</view>
+                        <view class="th">出生年月</view>
+                        <view class="th">所在学院</view>
+                        <view class="th">专业</view>
+                        <view class="th">班级</view>
+                        <view class="th">手机</view>
+                        <view class="th">E-mail</view>
+                        <view class="th">项目中的分工</view>
+                        <view class="th">是否为负责人</view>
+                    </view>
+                </view>
+                <view class="tablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="tabletd" hover-class="none" hover-stop-propagation="false" wx:for="{{stuedentinfo}}" wx:key="index">
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.name}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.sex}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.sno}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.nation}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.birth}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.college}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.major}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.class}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.phone}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.email}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.work}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.isoneperson}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- -====================================================================================== -->
+        <view class="teachers" hover-class="none" hover-stop-propagation="false">
+            <view class="teachersperson" hover-class="none" hover-stop-propagation="false">
+                指导老师
+            </view>
+            <view class="add" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="powerDrawer2" data-statu="open">添加</button>
+            </view>
+            <view class="drawer_screen" bindtap="powerDrawer2" data-statu="close" wx:if="{{showModalStatus2}}"></view>
+            <view class="hiddencontent" wx:if="{{showModalStatus2}}" animation="{{animationData}}">
+                <view class="dialog" hover-class="none" hover-stop-propagation="false">
+                    <view class="changemodule" hover-class="none" hover-stop-propagation="false">
+                        <view class="title-con" hover-class="none" hover-stop-propagation="false">
+                            <view class="title" hover-class="none" hover-stop-propagation="false">
+                                添加项目指导老师
+                            </view>
+                        </view>
+                        <view class="contentinner" hover-class="none" hover-stop-propagation="false">
+                            <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                <view class="name" hover-class="none" hover-stop-propagation="false">
+                                    姓名
+                                </view>
+                                <view class="inputname" hover-class="none" hover-stop-propagation="false">
+                                    <input placeholder="姓名" bindinput="teachername"></input>
+                                </view>
+                            </view>
+                            <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="nation" hover-class="none" hover-stop-propagation="false">
+                                        民族
+                                    </view>
+                                    <view class="studentnation" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentnation" placeholder="民族" bindinput="teachernation"></input>
+                                    </view>
+                                </view>
+                                <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                    <view class="birth" hover-class="none" hover-stop-propagation="false">
+                                        出生年月
+                                    </view>
+                                    <view class="studentbirth" hover-class="none" hover-stop-propagation="false">
+                                        <input name="studentbirth" placeholder="出生年月" bindinput="teacherbirth"></input>
+                                    </view>
+                                </view>
+                            <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                <view class="phone" hover-class="none" hover-stop-propagation="false">
+                                    手机
+                                </view>
+                                <view class="inputname" hover-class="none" hover-stop-propagation="false">
+                                    <input placeholder="手机" bindinput="teacherphone"></input>
+                                </view>
+                            </view>
+                            <view class="form-group" hover-class="none" hover-stop-propagation="false">
+                                <view class="Email" hover-class="none" hover-stop-propagation="false">
+                                    E-mail
+                                </view>
+                                <view class="inputname" hover-class="none" hover-stop-propagation="false">
+                                    <input placeholder="E-mail" bindinput="teacherEmail"></input>
+                                </view>
+                            </view>
+                            <view class="btn" hover-class="none" hover-stop-propagation="false">
+                                <view class="submit" hover-class="none" hover-stop-propagation="false">
+                                    <button bindtap="getteacher">提交</button>
+                                </view>
+                                <view class="cancle" hover-class="none" hover-stop-propagation="false">
+                                    <button bindtap="powerDrawer2" data-statu="close">取消</button>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="table" hover-class="none" hover-stop-propagation="false">
+                <view class="tablehead" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="th">姓名</view>
+                        <view class="th">民族</view>
+                        <view class="th">出生年月</view>
+                        <view class="th">手机</view>
+                        <view class="th">E-mail</view>
+                    </view>
+                </view>
+                <view class="tablebody" hover-class="none" hover-stop-propagation="false">
+                    <view class="tabletr" hover-class="none" hover-stop-propagation="false">
+                        <view class="tabletd" hover-class="none" hover-stop-propagation="false" wx:for="{{teacherinfo}}" wx:key="index">
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.teachername}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.teachernation}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.teachersbirth}}
+                            </view>
+                            
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.teachersphone}}
+                            </view>
+                            <view class="studentname" hover-class="none" hover-stop-propagation="false" >
+                                {{item.teachersemail}}
+                            </view>
+
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="form-group" hover-class="none" hover-stop-propagation="false">
+        <view class="subumit" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotoapplyaccording">下一步</button>
+        </view>
+        <view class="cancle" hover-class="none" hover-stop-propagation="false">
+            <button bindtap="gotocreateexercise">返回</button>
+        </view>
+    </view>
+</view>

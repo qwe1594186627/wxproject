@@ -1,0 +1,60 @@
+<view class="index">
+    <searchinput></searchinput>
+    <tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange">
+        <block wx:if="{{tabs[0].isactive}}">
+            <!-- 轮播图 -->
+            <view class="index_swiper">
+                <swiper class="swiper-s" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}"> 
+                    <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="id">
+                        <navigator>
+                        <image class="jpg" src="{{item.articlecimg}}"></image>
+                        </navigator>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <!-- ———————————————————————————— -->
+            <view class="first_tab" >
+                <navigator class="newnotice" wx:for="{{newarticleList}}"  wx:key="id" bindtap="onclick" data-index="{{index}}">
+                    <!-- 左侧图片 -->
+                    <view class="noticeimg">
+                        <image mode="widthFix" src="https://wkphoto.cdn.bcebos.com/d0c8a786c9177f3e32299e6e60cf3bc79f3d56b7.jpg"/>
+                    </view>
+                    <!-- 右侧文字 -->
+                    <view class="noticeword">
+                        <view class="noticeinfo">{{item.articletitle}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:elif="{{tabs[1].isactive}}">
+            <view class="first_tab" >
+                <navigator class="newnotice" wx:for="{{newarticleList}}"  wx:key="id" bindtap="onclick" data-index="{{index}}">
+                    <!-- 左侧图片 -->
+                    <view class="noticeimg">
+                        <image mode="widthFix" src="https://wkphoto.cdn.bcebos.com/d0c8a786c9177f3e32299e6e60cf3bc79f3d56b7.jpg"/>
+                    </view>
+                    <!-- 右侧文字 -->
+                    <view class="noticeword">
+                        <view class="noticeinfo">{{item.articletitle}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+
+        
+        <block wx:elif="{{tabs[2].isactive}}">
+            <view class="first_tab" >
+                <navigator class="newnotice" bindtap="downloadfile">
+                    <!-- 左侧图片 -->
+                    <view class="noticeimg">
+                        <image mode="widthFix" src="https://wkphoto.cdn.bcebos.com/d0c8a786c9177f3e32299e6e60cf3bc79f3d56b7.jpg"/>
+                    </view>
+                    <!-- 右侧文字 -->
+                    <view class="noticeword">
+                        <view class="noticeinfo" bindtap="downloadapplyfile">申请表下载</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </tabs>
+</view>

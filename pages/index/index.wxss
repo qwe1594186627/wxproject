@@ -1,0 +1,24 @@
+.index .first_tab .newnotice {
+  display: flex;
+}
+.index .first_tab .newnotice .noticeimg {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.index .first_tab .newnotice .noticeimg image {
+  width: 60%;
+  height: 60%;
+}
+.index .first_tab .newnotice .noticeimg {
+  padding-top: 10px;
+}
+.index .first_tab .newnotice .noticeword {
+  flex: 3;
+}
+.index .first_tab .newnotice .noticeword .noticeinfo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px #e4e8ea solid;
+}

@@ -1,0 +1,133 @@
+<view class="createexercise" hover-class="none" hover-stop-propagation="false">
+    <view class="firstintroduction" hover-class="none" hover-stop-propagation="false">
+        <view class="introduction" hover-class="none" hover-stop-propagation="false">
+            <view class="num" hover-class="none" hover-stop-propagation="false">1</view>
+            <view class="basicinfo" hover-class="none" hover-stop-propagation="false">基本情况</view>
+        </view>
+    </view>
+    <view class="information" hover-class="none" hover-stop-propagation="false">
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectname" hover-class="none" hover-stop-propagation="false">项目名称</view>
+            <view class="inputprojectname" hover-class="none" hover-stop-propagation="false">
+                <input placeholder="项目名称" bindinput="getinputprojectname">
+                {{getinputprojectname}}
+                </input>
+            </view>
+        </view>
+
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectlevel" hover-class="none" hover-stop-propagation="false">项目种类</view>
+            <view class="selectprojectlevel" hover-class="none" hover-stop-propagation="false">
+                <picker class="isprojectstudentpicker" range="{{projectwhatkinds}}" value="{{index0}}" bindchange="bindPickerChange0">
+                    <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                        {{projectwhatkinds[index0]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="college" hover-class="none" hover-stop-propagation="false">所属学校</view>
+            <view class="inputcollege" hover-class="none" hover-stop-propagation="false">
+                <input placeholder="学校名称" bindinput="inputcollege">
+                {{getinputprojectschool}}
+                </input>
+            </view>
+        </view>
+        
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectlevel" hover-class="none" hover-stop-propagation="false">项目级别</view>
+            <view class="selectprojectlevel" hover-class="none" hover-stop-propagation="false">
+                <picker class="isprojectstudentpicker" range="{{projectlevel}}" value="{{index1}}" bindchange="bindPickerChange1">
+                    <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                        {{projectlevel[index1]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectkinds" hover-class="none" hover-stop-propagation="false">项目类别</view>
+            <view class="selectprojectkinds" hover-class="none" hover-stop-propagation="false">
+                <picker class="isprojectstudentpicker" range="{{projectkinds}}" value="{{index2}}" bindchange="bindPickerChange2">
+                    <view class="inputisprojectstudentindex" hover-class="none" hover-stop-propagation="false">
+                        {{projectkinds[index2]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="starttime" hover-class="none" hover-stop-propagation="false">起始时间</view>
+            <view class="inputstarttime" hover-class="none" hover-stop-propagation="false">
+                <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                    <view class="picker">当前选择: {{date}}</view>
+                </picker>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="finishtime" hover-class="none" hover-stop-propagation="false">完成时间</view>
+            <view class="inputfinishtime" hover-class="none" hover-stop-propagation="false">
+                 <picker mode="date" value="{{date2}}" bindchange="bindDateChange2">
+                    <view class="picker">当前选择: {{date2}}</view>
+                </picker>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="subjectkinds" hover-class="none" hover-stop-propagation="false">
+                所属学科专业
+            </view>
+            <view class="selectsubjectkinds" hover-class="none" hover-stop-propagation="false">
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{issubjectkind}}">
+                    <view class="picker" hover-class="none" hover-stop-propagation="false">
+                        {{issubjectkind[0][multiIndex[0]]}},{{issubjectkind[1][multiIndex[1]]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="projectinfo" hover-class="none" hover-stop-propagation="false">项目简介</view>
+            <view class="inputprojectinfo" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputprojectinfo">
+                    {{getinputprojectintro}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="hostscience" hover-class="none" hover-stop-propagation="false">
+                负责人参与科研情况
+            </view>
+            <view class="inputhostscience" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputhostscience">
+                    {{getinputprojectsturesearch}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="teacherscience" hover-class="none" hover-stop-propagation="false">
+                指导教师承担科研课题情况
+            </view>
+            <view class="inputteacherscience" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputteacherscience">
+                    {{getinputprojecttearesearch}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="teacherapprove" hover-class="none" hover-stop-propagation="false">
+                指导教师对本项目的支持情况
+            </view>
+            <view class="inputteacherapprove" hover-class="none" hover-stop-propagation="false">
+                <textarea name="" id="" cols="30" rows="10" bindinput="inputteacherapprove">
+                    {{getinputprojecttearqpprov}}
+                </textarea>
+            </view>
+        </view>
+        <view class="form-group" hover-class="none" hover-stop-propagation="false">
+            <view class="next" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotostudensandteachers">下一步</button>
+            </view>
+            <view class="back" hover-class="none" hover-stop-propagation="false">
+                <button bindtap="gotoapply">返回</button>
+            </view>
+        </view>
+    </view>
+</view>

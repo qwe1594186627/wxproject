@@ -1,0 +1,22 @@
+<view class="user_info_warp">
+    <button class="button" wx:if="{{!userInfo}}" bindtap="login">登录</button>
+    <view class="user_info" wx:else>
+        <image class="touxiang" src="{{userInfo.avatarUrl}}"></image>
+        <view class="nickname">{{userInfo.nickName}}</view>
+        <button class="button" wx:if="{{userInfo}}" bindtap="outlogin">退出登录</button>
+    </view>
+</view>
+<view class="user_content" wx:if="{{userInfo}}">
+    <view class="user_main">
+        <view class="options_wrap">
+            <view class="myxiangmu" bindtap="gotomyproject">我的项目</view>
+            <view class="myxiangmu" bindtap="gotomystudents">学生信息</view>
+            <view class="myxiangmu" bindtap="gotomyteachers">教师信息</view>
+            <view class="myxiangmu" bindtap="gotomyaccording">依据信息</view>
+            <view class="myxiangmu" bindtap="gotomymoney">资金信息</view>
+            <view class="myxiangmu" bindtap="gotomyopoin">意见信息</view>
+            <view class="shezhi">设置</view>
+        </view>
+        <view class="recommend">把应用推荐给其他人</view>
+    </view>
+</view>

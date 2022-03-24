@@ -1,0 +1,10 @@
+<view class="search_row">
+    <input placeholder="请输入" bindinput="handleInput" bindconfirm="searchevent" confirm-type="search"></input>
+    <button bindtap="searchevent" >搜索</button>
+</view>
+<view class="search_content">
+    <view class="search_item" wx:for="{{articleList}}">
+        {{item.articletitle}}
+    </view>
+    
+</view>

@@ -1,0 +1,106 @@
+.allresult {
+  background-color: #e4e8ea;
+}
+.allresult .titile {
+  background-color: #fff;
+}
+.allresult .content {
+  background-color: #fff;
+}
+.allresult .content .articlecondition .articleconditionname {
+  color: #b400fe;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.allresult .content .articlecondition .articletable {
+  overflow-x: scroll;
+}
+.allresult .content .articlecondition .articletable .articletablehead .tabletr {
+  display: flex;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #1461cd;
+  font-weight: bold;
+}
+.allresult .content .articlecondition .articletable .articletablehead .tabletr .th {
+  padding-left: 3px;
+  padding-right: 16px;
+}
+.allresult .content .articlecondition .articletable .articletablebody .trd {
+  white-space: nowrap;
+  display: flex;
+  padding-left: 3px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+}
+.allresult .content .articlecondition .articletable .articletablebody .trd view {
+  padding-left: 3px;
+  padding-right: 120rpx;
+}
+.allresult .content .patentcondition .articleconditionname2 {
+  color: #b400fe;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.allresult .content .patentcondition .articletable {
+  overflow-x: scroll;
+}
+.allresult .content .patentcondition .articletable .articletablehead .tabletr {
+  display: flex;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #1461cd;
+  font-weight: bold;
+}
+.allresult .content .patentcondition .articletable .articletablehead .tabletr .th {
+  padding-left: 3px;
+  padding-right: 16px;
+}
+.allresult .content .patentcondition .articletable .articletablebody .tr .td {
+  padding-bottom: 10px;
+  display: flex;
+  white-space: nowrap;
+}
+.allresult .content .patentcondition .articletable .articletablebody .tr .td view {
+  padding-left: 3px;
+  padding-right: 150rpx;
+}
+.allresult .content .awardscondition .articleconditionname3 {
+  color: #b400fe;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.allresult .content .awardscondition .articletable {
+  overflow-x: scroll;
+}
+.allresult .content .awardscondition .articletable .articletablehead .tabletr {
+  display: flex;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #1461cd;
+  font-weight: bold;
+}
+.allresult .content .awardscondition .articletable .articletablehead .tabletr .th {
+  padding-left: 3px;
+  padding-right: 16px;
+}
+.allresult .content .awardscondition .articletable .articletablebody .tr .td {
+  padding-bottom: 10px;
+  display: flex;
+  white-space: nowrap;
+}
+.allresult .content .awardscondition .articletable .articletablebody .tr .td view {
+  padding-left: 3px;
+  padding-right: 150rpx;
+}
+.allresult .back {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #fff;
+}
